@@ -33,11 +33,11 @@ const Hero = () => {
                     Explore The World
                   </h4>
                   <h1 className="display-2 text-capitalize text-white mb-4">
-                    Let's The World Together!
+                    Let s The World Together!
                   </h1>
                   <p className="mb-5 fs-5">
                     Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
+                    typesetting industry. Lorem Ipsum has been the industry s
                     standard dummy text ever since the 1500s,
                   </p>
                   <div className="d-flex align-items-center justify-content-center">
@@ -72,7 +72,7 @@ const Hero = () => {
                   </h1>
                   <p className="mb-5 fs-5">
                     Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
+                    typesetting industry. Lorem Ipsum has been the industry s
                     standard dummy text ever since the 1500s,
                   </p>
                   <div className="d-flex align-items-center justify-content-center">
@@ -107,7 +107,7 @@ const Hero = () => {
                   </h1>
                   <p className="mb-5 fs-5">
                     Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
+                    typesetting industry. Lorem Ipsum has been the industry s
                     standard dummy text ever since the 1500s,
                   </p>
                   <div className="d-flex align-items-center justify-content-center">

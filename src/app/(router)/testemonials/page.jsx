@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Testimonials = () => {
@@ -16,7 +17,7 @@ const Testimonials = () => {
                             </p>
                         </div>
                         <div className="testimonial-img p-1">
-                            <img src="img/testimonial-1.jpg" className="img-fluid rounded-circle" alt="Image"/>
+                            <Image src="/images/testimonial-1.jpg" className="img-fluid rounded-circle" alt="Image" width={150} height={100}/>
                         </div>
                         <div style={{marginTop: "-35px"}}>
                             <h5 className="mb-0">John Abraham</h5>
@@ -36,7 +37,7 @@ const Testimonials = () => {
                             </p>
                         </div>
                         <div className="testimonial-img p-1">
-                            <img src="img/testimonial-2.jpg" className="img-fluid rounded-circle" alt="Image"/>
+                            <Image src="/images/testimonial-2.jpg" className="img-fluid rounded-circle" alt="Image" width={150} height={100}/>
                         </div>
                         <div style={{marginTop: "-35px"}}>
                             <h5 className="mb-0">John Abraham</h5>
@@ -56,7 +57,7 @@ const Testimonials = () => {
                             </p>
                         </div>
                         <div className="testimonial-img p-1">
-                            <img src="img/testimonial-3.jpg" className="img-fluid rounded-circle" alt="Image"/>
+                            <Image src="/images/testimonial-3.jpg" className="img-fluid rounded-circle" alt="Image" width={150} height={100}/>
                         </div>
                         <div style={{marginTop: "-35px"}}>
                             <h5 className="mb-0">John Abraham</h5>
@@ -76,7 +77,7 @@ const Testimonials = () => {
                             </p>
                         </div>
                         <div className="testimonial-img p-1">
-                            <img src="img/testimonial-4.jpg" className="img-fluid rounded-circle" alt="Image"/>
+                            <Image src="/images/testimonial-4.jpg" className="img-fluid rounded-circle" alt="Image" width={150} height={100}/>
                         </div>
                         <div style={{marginTop: "-35px"}}>
                             <h5 className="mb-0">John Abraham</h5>

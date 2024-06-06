@@ -22,11 +22,7 @@ export default function RootLayout({ children }) {
         
     <head>
       
-        {/* <!-- Google Web Fonts --> */}
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet" /> 
-
+       
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
@@ -36,30 +32,19 @@ export default function RootLayout({ children }) {
           <NavBar />
               <main>{children}</main>
           <Footer/>
-{/* 
-          <Script
-          src="https://code.jquery.com/jquery-3.6.0.min.js"
-          strategy="beforeInteractive"
-        />
-        <Script
-          src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"
-          strategy="beforeInteractive"
-        />
-        <Script
-          src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"
-          strategy="beforeInteractive"
-        /> */}
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="/lib/easing/easing.min.js"></script>
-        <script src="/lib/waypoints/waypoints.min.js"></script>
-        <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="/lib/lightbox/js/lightbox.min.js"></script>
+
+        <Script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" />
+        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" />
+        <Script src="/lib/easing/easing.min.js" />
+        <Script src="/lib/waypoints/waypoints.min.js" />
+        <Script src="/lib/owlcarousel/owl.carousel.min.js" />
+        <Script src="/lib/lightbox/js/lightbox.min.js" />
 
           <Script
           src="/js/main.js"
           strategy="lazyOnload"
+          
         />
         </body>
       </html>
