@@ -20,8 +20,8 @@ const Hero = () => {
               <Image
                 src="/images/carousel-2.jpg"
                 className="Image-fluid"
-                width={150}
-                height={150}
+                width={400}
+                height={400}
                 alt="Image"
               />
               <div className="carousel-caption">
@@ -36,9 +36,7 @@ const Hero = () => {
                     Let s The World Together!
                   </h1>
                   <p className="mb-5 fs-5">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry s
-                    standard dummy text ever since the 1500s,
+                  Travel is more than just seeing sights; it’s about experiencing different ways of life. Dive into local customs, taste traditional cuisines, and participate in festivals that will give you a deep appreciation for diverse cultures.
                   </p>
                   <div className="d-flex align-items-center justify-content-center">
                     <a
@@ -55,8 +53,8 @@ const Hero = () => {
               <Image
                 src="/images/carousel-1.jpg"
                 className="Image-fluid"
-                width={150}
-                height={150}
+                width={400}
+                height={400}
                 alt="Image"
               />
               <div className="carousel-caption">
@@ -65,15 +63,13 @@ const Hero = () => {
                     className="text-white text-uppercase fw-bold mb-4"
                     style={{ letterSpacing: "3px" }}
                   >
-                    Explore The World
+                    Adventure of a Lifetime
                   </h4>
                   <h1 className="display-2 text-capitalize text-white mb-4">
-                    Find Your Perfect Tour At Travel
+                  Your Next Adventure Starts Here
                   </h1>
                   <p className="mb-5 fs-5">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry s
-                    standard dummy text ever since the 1500s,
+                  Whether it's hiking through dense jungles, white-water rafting in turbulent rivers, or soaring over landscapes in a hot air balloon, our tours are designed for those seeking adrenaline-pumping experiences.
                   </p>
                   <div className="d-flex align-items-center justify-content-center">
                     <a
@@ -90,8 +86,8 @@ const Hero = () => {
               <Image
                 src="/images/carousel-3.jpg"
                 className="Image-fluid"
-                width={150}
-                height={150}
+                width={400}
+                height={400}
                 alt="Image"
               />
               <div className="carousel-caption">
@@ -100,15 +96,13 @@ const Hero = () => {
                     className="text-white text-uppercase fw-bold mb-4"
                     style={{ letterSpacing: "3px" }}
                   >
-                    Explore The World
+                    Create Memories with Family Adventures
                   </h4>
                   <h1 className="display-2 text-capitalize text-white mb-4">
-                    You Like To Go?
+                  Fun-Filled Journeys for All Ages
                   </h1>
                   <p className="mb-5 fs-5">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry s
-                    standard dummy text ever since the 1500s,
+                  Explore destinations that offer fun and excitement for the entire family. From theme parks to wildlife safaris, discover activities and tours that everyone will enjoy.
                   </p>
                   <div className="d-flex align-items-center justify-content-center">
                     <a

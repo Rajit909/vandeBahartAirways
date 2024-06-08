@@ -10,9 +10,9 @@ const Services = () => {
                     <h1 className="mb-0">Our Services</h1>
                 </div>
                 <div className="row g-4">
-                    <div className="col-lg-6">
+                    <div className="col-lg-12">
                         <div className="row g-4">
-                            <div className="col-12">
+                            <div className="col-6">
                                 <div className="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
                                     <div className="service-content text-end">
                                         <h5 className="mb-4">WorldWide Tours</h5>
@@ -24,7 +24,7 @@ const Services = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12">
+                            <div className="col-6">
                                 <div className="service-content-inner d-flex align-items-center  bg-white border border-primary rounded p-4 pe-0">
                                     <div className="service-content text-end">
                                         <h5 className="mb-4">Hotel Reservation</h5>
@@ -36,7 +36,7 @@ const Services = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12">
+                            <div className="col-6">
                                 <div className="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
                                     <div className="service-content text-end">
                                         <h5 className="mb-4">Travel Guides</h5>
@@ -48,7 +48,7 @@ const Services = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-12">
+                            <div className="col-6">
                                 <div className="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
                                     <div className="service-content text-end">
                                         <h5 className="mb-4">Event Management</h5>
@@ -62,7 +62,7 @@ const Services = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6">
+                    {/* <div className="col-lg-6">
                         <div className="row g-4">
                             <div className="col-12">
                                 <div className="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 ps-0">
@@ -113,7 +113,7 @@ const Services = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="col-12">
                         <div className="text-center">
                             <a className="btn btn-primary rounded-pill py-3 px-5 mt-2" href="">Service More</a>
