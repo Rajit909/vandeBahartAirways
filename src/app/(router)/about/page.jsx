@@ -8,7 +8,7 @@ const About = () => {
         <div className="row g-5 align-items-center">
             <div className="col-lg-5">
                 <div className="h-100" style={{border: "50px solid", borderColor:" transparent #13357B transparent #13357B"}}>
-                    <Image src="/images/about-img.jpg" className="img-fluid" alt="" width={400} height={100}/>
+                    <Image src="/images/about.jpg" className="img-fluid" alt="" width={400} height={100}/>
                 </div>
             </div>
             <div className="col-lg-7" style={{background: "linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(img/about-img-1.png)"}}>

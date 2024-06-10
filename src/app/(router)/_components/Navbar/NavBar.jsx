@@ -42,7 +42,7 @@ const NavBar = () => {
             <nav className="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <Link href={"/"} className="navbar-brand">
                     {/* <h1 className="m-0"><i className="fa fa-map-marker-alt me-3"></i>VandeBharat Airways</h1> */}
-                    <Image src="/images/vblogo.png" alt="VandeBharat Airways" width={140} height={90} />
+                    <Image src="/images/vblogo2.png" alt="VandeBharat Airways" width={140} height={90} />
                 </Link>
 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">

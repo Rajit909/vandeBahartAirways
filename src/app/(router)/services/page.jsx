@@ -12,52 +12,54 @@ const Services = () => {
                 <div className="row g-4">
                     <div className="col-lg-12">
                         <div className="row g-4">
-                            <div className="col-6">
+                            <div className="col-12 col-lg-6">
                                 <div className="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
-                                    <div className="service-content text-end">
+                                    <div className="service-icon p-4">
+                                        <i className="fa fa-globe fa-4x text-primary"></i>
+                                    </div>
+                                    <div className="service-content ">
                                         <h5 className="mb-4">WorldWide Tours</h5>
                                         <p className="mb-0">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.
                                         </p>
                                     </div>
-                                    <div className="service-icon p-4">
-                                        <i className="fa fa-globe fa-4x text-primary"></i>
-                                    </div>
                                 </div>
                             </div>
-                            <div className="col-6">
+                            <div className="col-12 col-lg-6">
                                 <div className="service-content-inner d-flex align-items-center  bg-white border border-primary rounded p-4 pe-0">
-                                    <div className="service-content text-end">
+                                <div className="service-icon p-4">
+                                        <i className="fa fa-hotel fa-4x text-primary"></i>
+                                    </div>
+                                    <div className="service-content ">
                                         <h5 className="mb-4">Hotel Reservation</h5>
                                         <p className="mb-0">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.
                                         </p>
                                     </div>
-                                    <div className="service-icon p-4">
-                                        <i className="fa fa-hotel fa-4x text-primary"></i>
-                                    </div>
+                                    
                                 </div>
                             </div>
-                            <div className="col-6">
+                            <div className="col-12 col-lg-6">
                                 <div className="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
-                                    <div className="service-content text-end">
+                                    <div className="service-icon p-4">
+                                        <i className="fa fa-user fa-4x text-primary"></i>
+                                    </div>
+                                    <div className="service-content ">
                                         <h5 className="mb-4">Travel Guides</h5>
                                         <p className="mb-0">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.
                                         </p>
                                     </div>
-                                    <div className="service-icon p-4">
-                                        <i className="fa fa-user fa-4x text-primary"></i>
-                                    </div>
                                 </div>
                             </div>
-                            <div className="col-6">
+                            <div className="col-12 col-lg-6">
                                 <div className="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
-                                    <div className="service-content text-end">
+                                <div className="service-icon p-4">
+                                        <i className="fa fa-cog fa-4x text-primary"></i>
+                                    </div>
+                                    <div className="service-content ">
                                         <h5 className="mb-4">Event Management</h5>
                                         <p className="mb-0">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.
                                         </p>
                                     </div>
-                                    <div className="service-icon p-4">
-                                        <i className="fa fa-cog fa-4x text-primary"></i>
-                                    </div>
+                                  
                                 </div>
                             </div>
                         </div>

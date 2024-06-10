@@ -36,7 +36,7 @@ const Hero = () => {
                     Let s The World Together!
                   </h1>
                   <p className="mb-5 fs-5">
-                  Travel is more than just seeing sights; it’s about experiencing different ways of life. Dive into local customs, taste traditional cuisines, and participate in festivals that will give you a deep appreciation for diverse cultures.
+                  Travel is more than just seeing sights; it `&apos;` s about experiencing different ways of life. Dive into local customs, taste traditional cuisines, and participate in festivals that will give you a deep appreciation for diverse cultures.
                   </p>
                   <div className="d-flex align-items-center justify-content-center">
                     <a
@@ -69,7 +69,7 @@ const Hero = () => {
                   Your Next Adventure Starts Here
                   </h1>
                   <p className="mb-5 fs-5">
-                  Whether it's hiking through dense jungles, white-water rafting in turbulent rivers, or soaring over landscapes in a hot air balloon, our tours are designed for those seeking adrenaline-pumping experiences.
+                  Whether it `&apos;`s hiking through dense jungles, white-water rafting in turbulent rivers, or soaring over landscapes in a hot air balloon, our tours are designed for those seeking adrenaline-pumping experiences.
                   </p>
                   <div className="d-flex align-items-center justify-content-center">
                     <a
