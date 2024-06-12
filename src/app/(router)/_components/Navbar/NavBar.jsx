@@ -67,7 +67,9 @@ const NavBar = () => {
                         </div>
 
                     </div>
-                    <Link href={"/bookings"} className="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</Link>
+                    <Link href={"/career"} className="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">CAREER</Link>
+
+                    {/* <Link href={"/bookings"} className="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</Link> */}
                 </div>
             </nav>
       </div>

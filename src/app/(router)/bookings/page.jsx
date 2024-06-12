@@ -9,13 +9,14 @@ const Bookings = () => {
                     <div className="col-lg-6">
                         <h5 className="section-booking-title pe-3">Booking</h5>
                         <h1 className="text-white mb-4">Online Booking</h1>
-                        <p className="text-white mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime ullam esse fuga blanditiis accusantium pariatur quis sapiente, veniam doloribus praesentium? Repudiandae iste voluptatem fugiat doloribus quasi quo iure officia.
-                        </p>
-                        <p className="text-white mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur maxime ullam esse fuga blanditiis accusantium pariatur quis sapiente, veniam doloribus praesentium? Repudiandae iste voluptatem fugiat doloribus quasi quo iure officia.
-                        </p>
-                        <a href="#" className="btn btn-light text-primary rounded-pill py-3 px-5 mt-2">Read More</a>
+                        <div>
+
+                       
+                    <h1 className='text-warning text-center'>Comming Soon</h1>
+                        </div>
+                        {/* <a href="#" className="btn btn-light text-primary rounded-pill py-3 px-5 mt-2">Read More</a> */}
                     </div>
-                    <div className="col-lg-6">
+                    {/* <div className="col-lg-6">
                         <h1 className="text-white mb-3">Book A Tour Deals</h1>
                         <p className="text-white mb-4">Get <span className="text-warning">50% Off</span> On Your First Adventure Trip With Travela. Get More Deal Offers Here.</p>
                         <form>
@@ -80,7 +81,7 @@ const Bookings = () => {
                                 </div>
                             </div>
                         </form>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

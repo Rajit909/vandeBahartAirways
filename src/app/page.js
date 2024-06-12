@@ -8,8 +8,8 @@ import Tour from "./(router)/tour/page";
 import Packages from "./(router)/packages/page";
 import Gallery from "./(router)/gallery/page";
 import Bookings from "./(router)/bookings/page";
-import Guides from "./(router)/guides/page";
-import Testimonials from "./(router)/testemonials/page";
+// import Guides from "./(router)/guides/page";
+// import Testimonials from "./(router)/testemonials/page";
 import Subscribe from "./(router)/subscribe/page";
 // import Blog from "./(router)/blog/page";
 
@@ -48,13 +48,13 @@ export default function Home() {
         <Bookings/>
 
         {/* Guides */}
-        <Guides/>
+        {/* <Guides/> */}
 
         {/* blogs */}
         {/* <Blog/> */}
 
         {/* testimonials */}
-        <Testimonials/>
+        {/* <Testimonials/> */}
 
         {/* Subscribe form */}
         <Subscribe/>

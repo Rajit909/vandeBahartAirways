@@ -19,7 +19,7 @@ const Services = () => {
                                     </div>
                                     <div className="service-content ">
                                         <h5 className="mb-4">WorldWide Tours</h5>
-                                        <p className="mb-0">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.
+                                        <p className="mb-0">We are a Leading travel agency specialized in group travel all over world and the most exciting destinations in world. We are offering top services for all travel needs and the most different type of groups. We are sure that will inspire you to create your own and unique tour.
                                         </p>
                                     </div>
                                 </div>
