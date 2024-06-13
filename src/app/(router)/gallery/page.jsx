@@ -8,7 +8,8 @@ const Gallery = () => {
             <div className="mx-auto text-center mb-5" style={{maxWidth: "900px"}}>
                 <h5 className="section-title px-3">Our Gallery</h5>
                 <h1 className="mb-4">Tourism & Traveling Gallery.</h1>
-                <p className="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore nam, architecto doloremque velit explicabo? Voluptate sunt eveniet fuga eligendi! Expedita laudantium fugiat corrupti eum cum repellat a laborum quasi.
+                <p className="mb-0">
+                The pertinent identifying elements of India&apos;s nationalism, Culture & Heritage represent the heart and soul of the Country in its retrospective magnitude. The fragrance of India&apos;s inherent ethnic essence lingers to mesmerize the world at large.
                 </p>
             </div>
             <div className="tab-className text-center">

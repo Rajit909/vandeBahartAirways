@@ -9,7 +9,10 @@ const Tour = () => {
                 <div className="mx-auto text-center mb-5" style={{maxWidth: "900px"}}>
                     <h5 className="section-title px-3">Explore Tour</h5>
                     <h1 className="mb-4">The World</h1>
-                    <p className="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore nam, architecto doloremque velit explicabo? Voluptate sunt eveniet fuga eligendi! Expedita laudantium fugiat corrupti eum cum repellat a laborum quasi.
+                    <p className="mb-0">
+                    We offer small group adventure tours to over 100 countries, from the best tourist destinations to tick off your bucket list to the more unusual places that make ideal adventure holiday destinations.
+                    Our adventure travel experts have scouted out the best adventure holiday destinations for our small group trips. No matter which country you choose, our itineraries include the best there is to offer from local culture and history, to activities and wildlife-spotting. We &apos;ll include the must-see tourist highlights but also uncover the hidden gems and once-in-a-lifetime moments you wouldn&apos;t otherwise experience. 
+                    We&apos;ve got the pick of all the best adventure tourism destinations that are ready for exploring - where will you choose to go next? Select a place to go below to browse the trips available in that region, or use the menu at the top of the website to browse by country
                     </p>
                 </div>
                 <div className="tab-className text-center">
