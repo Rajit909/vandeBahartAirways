@@ -18,7 +18,7 @@ const Hero = () => {
           <div className="carousel-inner" role="listbox">
             <div className="carousel-item active">
               <Image
-                src="/images/carousel-2.jpg"
+                src="/images/HD-wallpaper-tour-across-world-attractions-culture-travel-visit.jpg"
                 className="Image-fluid"
                 width={400}
                 height={400}
@@ -33,10 +33,11 @@ const Hero = () => {
                     Explore The World
                   </h4>
                   <h1 className="display-2 text-capitalize text-white mb-4">
-                    Let s The World Together!
+                    Let&apos;s Explore  The World Together!
                   </h1>
                   <p className="mb-5 fs-5">
-                  Travel is more than just seeing sights; it `&apos;` s about experiencing different ways of life. Dive into local customs, taste traditional cuisines, and participate in festivals that will give you a deep appreciation for diverse cultures.
+                  	Unleash your wanderlust, tour the world. Your passport to extraordinary experiences.Crafting unforgettable journeys, one adventure at a time. 
+
                   </p>
                   <div className="d-flex align-items-center justify-content-center">
                     <a
@@ -51,7 +52,7 @@ const Hero = () => {
             </div>
             <div className="carousel-item">
               <Image
-                src="/images/carousel-1.jpg"
+                src="/images/Ms-Franc--768x548.jpg"
                 className="Image-fluid"
                 width={400}
                 height={400}
@@ -66,11 +67,12 @@ const Hero = () => {
                     Adventure of a Lifetime
                   </h4>
                   <h1 className="display-2 text-capitalize text-white mb-4">
-                  Your Next Adventure Starts Here
+                  Luxury or special experiences
                   </h1>
                   <p className="mb-5 fs-5">
-                  Whether it `&apos;`s hiking through dense jungles, white-water rafting in turbulent rivers, or soaring over landscapes in a hot air balloon, our tours are designed for those seeking adrenaline-pumping experiences.
-                  </p>
+                  Elevate your travel experience with us..
+                  Uncover hidden gems with us. Journey beyond your imagination
+                 </p>
                   <div className="d-flex align-items-center justify-content-center">
                     <a
                       className="btn-hover-bg btn btn-primary rounded-pill text-white py-3 px-5"
@@ -84,7 +86,7 @@ const Hero = () => {
             </div>
             <div className="carousel-item">
               <Image
-                src="/images/carousel-3.jpg"
+                src="/images/airplane-runway-night-with-lights-background_934652-4847.jpg"
                 className="Image-fluid"
                 width={400}
                 height={400}
@@ -96,13 +98,14 @@ const Hero = () => {
                     className="text-white text-uppercase fw-bold mb-4"
                     style={{ letterSpacing: "3px" }}
                   >
-                    Create Memories with Family Adventures
+                    
                   </h4>
                   <h1 className="display-2 text-capitalize text-white mb-4">
-                  Fun-Filled Journeys for All Ages
+                  Orient Your Action
                   </h1>
                   <p className="mb-5 fs-5">
                   Explore destinations that offer fun and excitement for the entire family. From theme parks to wildlife safaris, discover activities and tours that everyone will enjoy.
+                 
                   </p>
                   <div className="d-flex align-items-center justify-content-center">
                     <a
@@ -115,6 +118,8 @@ const Hero = () => {
                 </div>
               </div>
             </div>
+            
+            
           </div>
           <button
             className="carousel-control-prev"

@@ -11,20 +11,19 @@ const Footer = () => {
               <div className="footer-item d-flex flex-column">
                 <h4 className="mb-4 text-white">Get In Touch</h4>
                 <a href="">
-                  <i className="fas fa-home me-2"></i> Noida, Uttar Pradesh
+                  <i className="fas fa-home me-2"></i> Gurugram, Haryana
                   India
                 </a>
                 <a href="">
                   <i className="fas fa-envelope me-2"></i>{" "}
-                  hr@vandebharatairways.com | hr.nitin@vandebharatairways.com |
-                  hr.nitin@vandebharatairways.com
+                  hr@vandebharatairways.com | info@vandebharatairways.com
                 </a>
-                <a href="">
+                {/* <a href="">
                   <i className="fas fa-phone me-2"></i> +91 8954716427
                 </a>
                 <a href="" className="mb-3">
                   <i className="fas fa-print me-2"></i> +91 90586 41767
-                </a>
+                </a> */}
                 <div className="d-flex align-items-center">
                   <i className="fas fa-share fa-2x text-white me-2"></i>
                   <a
@@ -106,9 +105,9 @@ const Footer = () => {
                 <h4 className="text-white mb-3">Find Here...</h4>
 
                 <iframe
-                className=""
+            
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112185.38466410474!2d77.4186482649414!3d28.515866867095358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1718211039817!5m2!1sen!2sin"
-                  width="550"
+                  width="450"
                   height="350"
                   style={{ border: "5px" }}
                   allowfullscreen=""
@@ -126,14 +125,14 @@ const Footer = () => {
               
               </div>
             </div>
-        <div class="container-fluid copyright text-body py-4">
-            <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-6 text-center text-md-end mb-md-0">
-                        <i class="fas fa-copyright me-2"></i><a class="text-white" href="#">Vande Bharat Airways</a>, All right reserved.
+        <div className="container-fluid copyright text-body py-4">
+            <div className="container">
+                <div className="row g-4 align-items-center">
+                    <div className="col-md-6 text-center text-md-end mb-md-0">
+                        <i className="fas fa-copyright me-2"></i><a className="text-white" href="#">Vande Bharat Airways</a>, All right reserved.
                     </div>
-                    <div class="col-md-6 text-center text-md-start">
-                        Designed By <a class="text-white" href="https://htmlcodex.com">HTML Codex | Managed by (BTS)</a>
+                    <div className="col-md-6 text-center text-md-start">
+                        Designed By <a className="text-white" href="https://htmlcodex.com">HTML Codex | Managed by (BTS)</a>
                     </div>
                 </div>
             </div>

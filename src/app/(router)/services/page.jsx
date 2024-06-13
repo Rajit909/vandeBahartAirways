@@ -19,7 +19,9 @@ const Services = () => {
                                     </div>
                                     <div className="service-content ">
                                         <h5 className="mb-4">WorldWide Tours</h5>
-                                        <p className="mb-0">We are a Leading travel agency specialized in group travel all over world and the most exciting destinations in world. We are offering top services for all travel needs and the most different type of groups. We are sure that will inspire you to create your own and unique tour.
+                                        <p className="mb-0">
+                                        We are a Leading travel agency specialized in group travel all over world and the most exciting destinations in world. We are offering top services for all travel needs and the most different type of groups. We are sure that will inspire you to create your own and unique tour.
+                                            <br /><br /><br /><br />
                                         </p>
                                     </div>
                                 </div>
@@ -31,7 +33,11 @@ const Services = () => {
                                     </div>
                                     <div className="service-content ">
                                         <h5 className="mb-4">Hotel Reservation</h5>
-                                        <p className="mb-0">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.
+                                        <p className="mb-0">
+                                        Find your perfect hotel stay with us, we guarantee!! We can give you the effortless Hotel Bookings on a unbeatable prices. Here you will find easiest and secure way of booking. What you are waiting for ?? We have very exclusive deal for you, use the platform and come up with your plans.
+We provide safe and secure transactions with trusted payments gateways.
+We have Dedicated team to assist you throughout your booking journey 24/7 Customer Support
+
                                         </p>
                                     </div>
                                     
@@ -44,8 +50,21 @@ const Services = () => {
                                     </div>
                                     <div className="service-content ">
                                         <h5 className="mb-4">Travel Guides</h5>
-                                        <p className="mb-0">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.
-                                        </p>
+                                        <p className="mb-0">
+                                        Cater to different travel styles and budgets. Include popular tourist spots, hidden gems, and off-the-beaten-path adventures.
+Make your priorities and right plans
+
+o	Carry your visa requirements, currency exchange, best time to visit, average weather conditions, and basic local etiquette.
+o	Create categorized sections highlighting must-see attractions, historical sites, cultural experiences, outdoor activities, and hidden gems.
+o	Book your flights and accommodation in advance 
+o	Where To Stay: Best hotels, hostels, and unique accommodations catering to different budgets and travel styles.
+o	Eat budget-friendly meal.
+o	Smooth and cheap public transportation options, car rentals, taxis, and ride-sharing services. Action Now!!on travel guides.
+"Book Your Tour Now!", "Explore Our handsome Packages", or "Browse Hotels at your destinations".
+If you're visiting a conservative country, dress modestly to avoid offending locals.
+
+
+                                            </p>
                                     </div>
                                 </div>
                             </div>
@@ -55,8 +74,18 @@ const Services = () => {
                                         <i className="fa fa-cog fa-4x text-primary"></i>
                                     </div>
                                     <div className="service-content ">
-                                        <h5 className="mb-4">Event Management</h5>
-                                        <p className="mb-0">Dolor sit amet consectetur adipisicing elit. Non alias eum, suscipit expedita corrupti officiis debitis possimus nam laudantium beatae quidem dolore consequuntur voluptate rem reiciendis, omnis sequi harum earum.
+                                            <br /><br /><br /><br />
+                                        <h5 className="mb-4">24x7 Customer support</h5>
+                                        <p className="mb-0">
+                                        We respect your money packets and your choices that’s why we are always be there to handle, to cover your best plans in best rates.
+Don’t think about single effort from our side, we will be there to help you out anytime support required.
+YOU ARE JUST A SECOND WAY FROM US…!!
+<br /><br />
+<br />
+<br />
+<br />
+<br />
+
                                         </p>
                                     </div>
                                   
