@@ -34,7 +34,7 @@ const Contact = () => {
                     </div>
                     <div className="col-lg-8">
                         <h3 className="mb-2">Send us a message</h3>
-                        <p className="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                        <p className="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you &apos;re done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
                         <form>
                             <div className="row g-3">
                                 <div className="col-md-6">
