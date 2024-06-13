@@ -1,6 +1,6 @@
 'use client'
 
-import About from "./(router)/about/page";
+// import About from "./(router)/about/page";
 import Destinations from "./(router)/destinations/page";
 import Hero from "./(router)/hero/page";
 import Services from "./(router)/services/page";
@@ -27,7 +27,7 @@ export default function Home() {
         <Hero/>
 
         {/* About */}
-        <About/>
+        {/* <About/> */}
 
         {/* Services */}
         <Services/>
@@ -35,11 +35,11 @@ export default function Home() {
         {/* destinations */}
         <Destinations/>
 
-        {/* Tour */}
-        <Tour/>
-
         {/* packages */}
         <Packages/>
+
+         {/* Tour */}
+         <Tour/>
 
         {/* Gallery */}
         <Gallery/>

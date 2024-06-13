@@ -5,6 +5,8 @@ import "/public/css/style.css";
 import "/public/css/bootstrap.min.css";
 import "/public/lib/owlcarousel/assets/owl.carousel.min.css";
 import "/public/lib/lightbox/css/lightbox.min.css";
+// import "/public/scss/bootstrap.scss";
+// import "/public/scss/";
 
 
 import Script from "next/script";
@@ -32,6 +34,7 @@ export default function RootLayout({ children }) {
           <NavBar />
               <main>{children}</main>
           <Footer/>
+          <a href="#" className="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i className="fa fa-arrow-up"></i></a>   
 
 
         <Script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" />
