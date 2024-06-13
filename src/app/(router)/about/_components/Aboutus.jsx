@@ -47,7 +47,7 @@ const Aboutus = () => {
   
                  &nbsp;  &nbsp;- User-Friendly Interface: Our website features an intuitive interface designed to make the booking process quick and hassle-free. With just a few clicks, you can search for flights, trains, and hotels, compare prices, and complete your reservation.
   <br />
-                  &nbsp; &nbsp; - Best Prices: We're committed to helping you save money on your travels. Our advanced search algorithms scour the web to find the best deals and discounts, ensuring that you get the most value for your money.
+                  &nbsp; &nbsp; - Best Prices: We re committed to helping you save money on your travels. Our advanced search algorithms scour the web to find the best deals and discounts, ensuring that you get the most value for your money.
               </p>
 
               </p>

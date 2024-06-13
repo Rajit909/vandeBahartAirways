@@ -60,8 +60,8 @@ o	Book your flights and accommodation in advance
 o	Where To Stay: Best hotels, hostels, and unique accommodations catering to different budgets and travel styles.
 o	Eat budget-friendly meal.
 o	Smooth and cheap public transportation options, car rentals, taxis, and ride-sharing services. Action Now!!on travel guides.
-"Book Your Tour Now!", "Explore Our handsome Packages", or "Browse Hotels at your destinations".
-If you're visiting a conservative country, dress modestly to avoid offending locals.
+Book Your Tour Now! Explore Our handsome Packages, or Browse Hotels at your destinations.
+If you &apos;re visiting a conservative country, dress modestly to avoid offending locals.
 
 
                                             </p>
@@ -77,8 +77,8 @@ If you're visiting a conservative country, dress modestly to avoid offending loc
                                             <br /><br /><br /><br />
                                         <h5 className="mb-4">24x7 Customer support</h5>
                                         <p className="mb-0">
-                                        We respect your money packets and your choices that’s why we are always be there to handle, to cover your best plans in best rates.
-Don’t think about single effort from our side, we will be there to help you out anytime support required.
+                                        We respect your money packets and your choices that&apos; why we are always be there to handle, to cover your best plans in best rates.
+Don &apos;t think about single effort from our side, we will be there to help you out anytime support required.
 YOU ARE JUST A SECOND WAY FROM US…!!
 <br /><br />
 <br />
