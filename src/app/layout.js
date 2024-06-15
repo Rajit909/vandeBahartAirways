@@ -16,6 +16,7 @@ export const metadata = {
   title: 'Vande Bharat Airways - Experience Luxury in the Skies',
   description: 'Fly with Vande Bharat Airways for a luxurious and comfortable travel experience. Discover our premium services and book your flight today.',
   author: 'Vande Bharat Airways',
+  keywords:['Vande bharat airways','airways','airlines','flight booking'],
   viewport: 'width=device-width, initial-scale=1.0',
   canonical: 'https://vandebharatairways.com',
   og: {
@@ -39,6 +40,7 @@ export default function RootLayout({ children }) {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="author" content={metadata.author} />
+        <meta name="keywords" content={metadata.keywords} />
         <meta name="description" content={metadata.description} />
         <meta name="viewport" content={metadata.viewport} />
         <link rel="icon" href="/favicon.ico" />
