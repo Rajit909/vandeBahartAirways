@@ -106,7 +106,7 @@ const Footer = () => {
 
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224568.15030524903!2d76.9897491!3d28.42295755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19d582e38859%3A0x2cf5fe8e5c64b1e!2sGurugram%2C%20Haryana!5e0!3m2!1sen!2sin!4v1718266412450!5m2!1sen!2sin"
-                  width="450"
+                  width="350"
                   height="350"
                   style={{ border: "5px" }}
                   loading="lazy"
