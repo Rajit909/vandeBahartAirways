@@ -10,6 +10,8 @@ import "/public/lib/lightbox/css/lightbox.min.css";
 import Script from "next/script";
 import Head from 'next/head';
 
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 // Metadata object without the viewport setting
 export const metadata = {
   title: 'Vande Bharat Airways - Experience Luxury in the Skies',
@@ -77,6 +79,8 @@ export default function RootLayout({ children }) {
         <Script src="/lib/owlcarousel/owl.carousel.min.js" />
         <Script src="/lib/lightbox/js/lightbox.min.js" />
         <Script src="/js/main.js" strategy="lazyOnload" />
+
+        <SpeedInsights/>
       </body>
     </html>
   );
