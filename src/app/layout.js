@@ -10,25 +10,56 @@ import "/public/lib/lightbox/css/lightbox.min.css";
 
 
 import Script from "next/script";
-
+import Head from 'next/head';
 
 export const metadata = {
-  title: "Vande Bharat Airways",
-  description: "Learn to build!",
+  title: 'Vande Bharat Airways - Experience Luxury in the Skies',
+  description: 'Fly with Vande Bharat Airways for a luxurious and comfortable travel experience. Discover our premium services and book your flight today.',
+  author: 'Vande Bharat Airways',
+  keywords:['Vande bharat airways','airways','airlines','flight booking'],
+  viewport: 'width=device-width, initial-scale=1.0',
+  canonical: 'https://vandebharatairways.com',
+  og: {
+    title: 'Vande Bharat Airways - Experience Luxury in the Skies',
+    description: 'Fly with Vande Bharat Airways for a luxurious and comfortable travel experience. Discover our premium services and book your flight today.',
+    url: 'https://vandebharatairways.com',
+    type: 'website',
+    image: 'https://vandebharatairways.com/images/og-image.jpg'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Vande Bharat Airways - Experience Luxury in the Skies',
+    description: 'Fly with Vande Bharat Airways for a luxurious and comfortable travel experience. Discover our premium services and book your flight today.',
+    image: 'https://vandebharatairways.com/images/twitter-image.jpg'
+  }
 };
 
 export default function RootLayout({ children }) {
   return (
-      <html lang="en">
-
-        
-    <head>
-      
+    <html lang="en">
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta name="author" content={metadata.author} />
+        <meta name="keywords" content={metadata.keywords} />
+        <meta name="description" content={metadata.description} />
+        <meta name="viewport" content={metadata.viewport} />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href={metadata.canonical} />
+        <meta property="og:title" content={metadata.og.title} />
+        <meta property="og:description" content={metadata.og.description} />
+        <meta property="og:url" content={metadata.og.url} />
+        <meta property="og:type" content={metadata.og.type} />
+        <meta property="og:image" content={metadata.og.image} />
+        <meta name="twitter:card" content={metadata.twitter.card} />
+        <meta name="twitter:title" content={metadata.twitter.title} />
+        <meta name="twitter:description" content={metadata.twitter.description} />
+        <meta name="twitter:image" content={metadata.twitter.image} />
+    
        
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-    </head>
+    </Head>
         <body>
        
           <NavBar />
