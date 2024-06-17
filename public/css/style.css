@@ -162,6 +162,7 @@
     font-weight: 400;
     outline: none;
     transition: .5s;
+    background-color: white;
 }
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
