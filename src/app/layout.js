@@ -59,6 +59,28 @@ export default function RootLayout({ children }) {
         <meta name="twitter:title" content={metadata.twitter.title} />
         <meta name="twitter:description" content={metadata.twitter.description} />
         <meta name="twitter:image" content={metadata.twitter.image} />
+        <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Vande Bharat Airways",
+      "url": "https://vandebharatairways.com",
+      "logo": "https://vandebharatairways.com/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-800-123-4567",
+        "contactType": "Customer Service"
+      },
+      "sameAs": [
+        "https://www.facebook.com/vandebharatairways",
+        "https://www.twitter.com/vandebharatairways",
+        "https://www.instagram.com/vandebharatairways"
+      ]
+    }
+    `}
+  </script>
+        
 
       </Head>
       <head>
