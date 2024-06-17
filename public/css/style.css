@@ -153,6 +153,9 @@
 
 
 /*** Navbar ***/
+nav{
+    background: white;
+}
 .navbar-light .navbar-nav .nav-link {
     font-family: 'Roboto', sans-serif;
     position: relative;
@@ -162,7 +165,6 @@
     font-weight: 400;
     outline: none;
     transition: .5s;
-    background-color: white;
 }
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
