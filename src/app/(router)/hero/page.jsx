@@ -37,7 +37,7 @@ const Hero = () => {
                     Let&apos;s Explore  The World Together!
                   </h1>
                   <p className="mb-5 fs-5">
-                  	Unleash your wanderlust, tour the world. Your passport to extraordinary experiences.Crafting unforgettable journeys, one adventure at a time. 
+                  	Unleash your wanderlust, tour the world. Your passport to extraordinary experiences.Crafting unforgettable journeys with Vande bharat Airways, one adventure at a time. 
 
                   </p>
                   <div className="d-flex align-items-center justify-content-center">
@@ -72,7 +72,7 @@ const Hero = () => {
                   </h1>
                   <p className="mb-5 fs-5">
                   Elevate your travel experience with us..
-                  Uncover hidden gems with us. Journey beyond your imagination
+                  Uncover hidden gems with us. Journey beyond your imagination with Vande bharat Airways
                  </p>
                   <div className="d-flex align-items-center justify-content-center">
                     <a
@@ -105,7 +105,7 @@ const Hero = () => {
                   Orient Your Action
                   </h1>
                   <p className="mb-5 fs-5">
-                  Explore destinations that offer fun and excitement for the entire family. From theme parks to wildlife safaris, discover activities and tours that everyone will enjoy.
+                  Explore destinations that offer fun and excitement for the entire family with Vande bharat Airways. From theme parks to wildlife safaris, discover activities and tours that everyone will enjoy.
                  
                   </p>
                   <div className="d-flex align-items-center justify-content-center">

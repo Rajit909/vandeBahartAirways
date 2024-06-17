@@ -109,7 +109,6 @@ const Footer = () => {
                   width="450"
                   height="350"
                   style={{ border: "5px" }}
-                  allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
