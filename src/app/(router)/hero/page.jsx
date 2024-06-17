@@ -140,7 +140,7 @@ const Hero = () => {
                   </h1>
                   <p className="mb-5 fs-5">
                   Discover the world, in your way. 
-                  Uncover hidden gems with us. Journey beyond your imagination. 
+                  Uncover hidden gems with Vande Bharat Airways. Journey beyond your imagination. 
 
                   </p>
                   <div className="d-flex align-items-center justify-content-center">
