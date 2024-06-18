@@ -10,11 +10,9 @@ import "/public/lib/lightbox/css/lightbox.min.css";
 import Script from "next/script";
 import Head from "next/head";
 
-import { SpeedInsights } from "@vercel/speed-insights/next";
-
 // Metadata object without the viewport setting
 export const metadata = {
-  title: "Vande Bharat Airways - Experience Luxury in the Skies",
+  title: "Vande Bharat Airways | - Experience Luxury in the Skies",
   description:
     "Fly with Vande Bharat Airways for a luxurious and comfortable travel experience. Discover our premium services and book your flight today.",
   author: "Vande Bharat Airways",
@@ -37,7 +35,7 @@ export const metadata = {
   },
 };
 
-// Separate viewport settings function
+// Separate viewport settings function for Next.js best practices
 export const generateViewport = () => {
   return "width=device-width, initial-scale=1.0";
 };
@@ -47,88 +45,85 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
+        {/* Basic Meta Tags */}
         <meta charSet="UTF-8" />
         <meta name="author" content={metadata.author} />
         <meta name="keywords" content={metadata.keywords.join(", ")} />
         <meta name="description" content={metadata.description} />
+        <meta name="viewport" content={generateViewport()} />
+        
+        {/* Favicon and Icons */}
         <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        
+        {/* Canonical URL */}
         <link rel="canonical" href={metadata.canonical} />
+        
+        {/* Open Graph / Facebook Meta Tags */}
         <meta property="og:title" content={metadata.og.title} />
         <meta property="og:description" content={metadata.og.description} />
         <meta property="og:url" content={metadata.og.url} />
         <meta property="og:type" content={metadata.og.type} />
         <meta property="og:image" content={metadata.og.image} />
+        
+        {/* Twitter Meta Tags */}
         <meta name="twitter:card" content={metadata.twitter.card} />
         <meta name="twitter:title" content={metadata.twitter.title} />
-        <meta
-          name="twitter:description"
-          content={metadata.twitter.description}
-        />
+        <meta name="twitter:description" content={metadata.twitter.description} />
         <meta name="twitter:image" content={metadata.twitter.image} />
-        <script type="application/ld+json">
-          {`
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Vande Bharat Airways",
-      "url": "https://vandebharatairways.com",
-      "logo": "https://vandebharatairways.com/images/vblogo1.png",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://vandebharatairways.com"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "About",
-          "item": "https://vandebharatairways.com/about"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Destinations",
-          "item": "https://vandebharatairways.com/destinations"
-        }
-      ]
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "",
-        "contactType": "Customer Service"
-      },
-      "sameAs": [
-        "https://www.facebook.com/vandebharatairways",
-        "https://www.twitter.com/vandebharatairways",
-        "https://www.instagram.com/vandebharatairways"
-      
-    }
-    `}
-        </script>
-      </Head>
-      <head>
-           {/* Basic Favicon */}
-           <link rel="icon" href="/favicon.ico" />       
         
-        {/* Add different sizes for different devices */}
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
-        <link rel="manifest" href="/site.webmanifest"/>
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"/>
-        <meta name="msapplication-TileColor" content="#da532c"/>
-        <meta name="theme-color" content="#ffffff"/>
-        <link
-          rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        />
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-          rel="stylesheet"
-        />
-      </head>
+        
+        {/* Structured Data (JSON-LD) */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Vande Bharat Airways",
+            "url": "https://vandebharatairways.com",
+            "logo": "https://vandebharatairways.com/images/vblogo1.png",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+91 9058641767",
+              "contactType": "Customer Service"
+            },
+            "sameAs": [
+              "https://www.facebook.com/vandebharatairways",
+              "https://www.twitter.com/vandebharatairways",
+              "https://www.instagram.com/vandebharatairways"
+            ],
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://vandebharatairways.com"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "About",
+                  "item": "https://vandebharatairways.com/about"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Destinations",
+                  "item": "https://vandebharatairways.com/destinations"
+                }
+              ]
+            }
+          })
+        }} />        
+      </Head>
+      
       <body>
         <NavBar />
         <main>{children}</main>
@@ -139,6 +134,8 @@ export default function RootLayout({ children }) {
         >
           <i className="fa fa-arrow-up"></i>
         </a>
+        
+        {/* JavaScript Libraries and Scripts */}
         <Script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" />
         <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" />
         <Script src="/lib/easing/easing.min.js" />
@@ -146,7 +143,6 @@ export default function RootLayout({ children }) {
         <Script src="/lib/owlcarousel/owl.carousel.min.js" />
         <Script src="/lib/lightbox/js/lightbox.min.js" />
         <Script src="/js/main.js" strategy="lazyOnload" />
-        <SpeedInsights />
       </body>
     </html>
   );
