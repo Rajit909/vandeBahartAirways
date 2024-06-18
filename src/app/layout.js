@@ -8,35 +8,38 @@ import "/public/lib/owlcarousel/assets/owl.carousel.min.css";
 import "/public/lib/lightbox/css/lightbox.min.css";
 
 import Script from "next/script";
-import Head from 'next/head';
+import Head from "next/head";
 
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // Metadata object without the viewport setting
 export const metadata = {
-  title: 'Vande Bharat Airways - Experience Luxury in the Skies',
-  description: 'Fly with Vande Bharat Airways for a luxurious and comfortable travel experience. Discover our premium services and book your flight today.',
-  author: 'Vande Bharat Airways',
-  keywords: ['Vande bharat airways', 'airways', 'airlines', 'flight booking'],
-  canonical: 'https://vandebharatairways.com',
+  title: "Vande Bharat Airways - Experience Luxury in the Skies",
+  description:
+    "Fly with Vande Bharat Airways for a luxurious and comfortable travel experience. Discover our premium services and book your flight today.",
+  author: "Vande Bharat Airways",
+  keywords: ["Vande bharat airways", "airways", "airlines", "flight booking"],
+  canonical: "https://vandebharatairways.com",
   og: {
-    title: 'Vande Bharat Airways - Experience Luxury in the Skies',
-    description: 'Fly with Vande Bharat Airways for a luxurious and comfortable travel experience. Discover our premium services and book your flight today.',
-    url: 'https://vandebharatairways.com',
-    type: 'website',
-    image: 'https://vandebharatairways.com/images/og-image.jpg'
+    title: "Vande Bharat Airways - Experience Luxury in the Skies",
+    description:
+      "Fly with Vande Bharat Airways for a luxurious and comfortable travel experience. Discover our premium services and book your flight today.",
+    url: "https://vandebharatairways.com",
+    type: "website",
+    image: "https://vandebharatairways.com/images/og-image.jpg",
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Vande Bharat Airways - Experience Luxury in the Skies',
-    description: 'Fly with Vande Bharat Airways for a luxurious and comfortable travel experience. Discover our premium services and book your flight today.',
-    image: 'https://vandebharatairways.com/images/twitter-image.jpg'
-  }
+    card: "summary_large_image",
+    title: "Vande Bharat Airways - Experience Luxury in the Skies",
+    description:
+      "Fly with Vande Bharat Airways for a luxurious and comfortable travel experience. Discover our premium services and book your flight today.",
+    image: "https://vandebharatairways.com/images/twitter-image.jpg",
+  },
 };
 
 // Separate viewport settings function
 export const generateViewport = () => {
-  return 'width=device-width, initial-scale=1.0';
+  return "width=device-width, initial-scale=1.0";
 };
 
 // Root layout component
@@ -46,7 +49,7 @@ export default function RootLayout({ children }) {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="author" content={metadata.author} />
-        <meta name="keywords" content={metadata.keywords.join(', ')} />
+        <meta name="keywords" content={metadata.keywords.join(", ")} />
         <meta name="description" content={metadata.description} />
         <link rel="icon" href="/favicon.ico" />
         <link rel="canonical" href={metadata.canonical} />
@@ -57,44 +60,83 @@ export default function RootLayout({ children }) {
         <meta property="og:image" content={metadata.og.image} />
         <meta name="twitter:card" content={metadata.twitter.card} />
         <meta name="twitter:title" content={metadata.twitter.title} />
-        <meta name="twitter:description" content={metadata.twitter.description} />
+        <meta
+          name="twitter:description"
+          content={metadata.twitter.description}
+        />
         <meta name="twitter:image" content={metadata.twitter.image} />
         <script type="application/ld+json">
-    {`
+          {`
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Vande Bharat Airways",
       "url": "https://vandebharatairways.com",
-      "logo": "https://vandebharatairways.com/images/logo.png",
+      "logo": "https://vandebharatairways.com/images/vblogo1.png",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://vandebharatairways.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://vandebharatairways.com/about"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Destinations",
+          "item": "https://vandebharatairways.com/destinations"
+        }
+      ]
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+1-800-123-4567",
+        "telephone": "",
         "contactType": "Customer Service"
       },
       "sameAs": [
         "https://www.facebook.com/vandebharatairways",
         "https://www.twitter.com/vandebharatairways",
         "https://www.instagram.com/vandebharatairways"
-      ]
+      
     }
     `}
-  </script>
-        
-
+        </script>
       </Head>
       <head>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+           {/* Basic Favicon */}
+           <link rel="icon" href="/favicon.ico" />       
+        
+        {/* Add different sizes for different devices */}
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+        <link rel="manifest" href="/site.webmanifest"/>
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"/>
+        <meta name="msapplication-TileColor" content="#da532c"/>
+        <meta name="theme-color" content="#ffffff"/>
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        />
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+          rel="stylesheet"
+        />
       </head>
       <body>
         <NavBar />
-        <main>
-          {children}
-          
-        </main>
+        <main>{children}</main>
         <Footer />
-        <a href="#" className="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top">
+        <a
+          href="#"
+          className="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"
+        >
           <i className="fa fa-arrow-up"></i>
         </a>
         <Script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" />
@@ -104,8 +146,7 @@ export default function RootLayout({ children }) {
         <Script src="/lib/owlcarousel/owl.carousel.min.js" />
         <Script src="/lib/lightbox/js/lightbox.min.js" />
         <Script src="/js/main.js" strategy="lazyOnload" />
-
-        <SpeedInsights/>
+        <SpeedInsights />
       </body>
     </html>
   );
