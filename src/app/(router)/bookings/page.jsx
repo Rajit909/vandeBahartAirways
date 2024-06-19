@@ -1,8 +1,12 @@
+"use client"
 import React from 'react'
 
+
+  
 const Bookings = () => {
   return (
-   <>
+   <>        
+   
         <div className="container-fluid booking py-5">
             <div className="container py-5">
                 <div className="row g-5 align-items-center">

@@ -1,5 +1,8 @@
+"use client"
 import React from "react";
 import Subscribe from "../subscribe/page";
+
+
 
 const Career = () => {
   return (

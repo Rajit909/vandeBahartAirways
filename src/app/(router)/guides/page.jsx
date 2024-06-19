@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import React from 'react'
 
@@ -15,7 +16,7 @@ const Guides = () => {
                         <div className="guide-item">
                             <div className="guide-img">
                                 <div className="guide-img-efects">
-                                    <Image src="/images/guide-1.jpg" className="img-fluid w-100 rounded-top" alt="Image" width={150} height={100}/>
+                                    <Image src="/images/guide-1.jpg" className="img-fluid w-100 rounded-top" alt="Image" width={150} height={100} sizes='10vw'/>
                                 </div>
                                 <div className="guide-icon rounded-pill p-2">
                                     <a className="btn btn-square btn-primary rounded-circle mx-1" href=""><i className="fab fa-facebook-f"></i></a>
@@ -36,7 +37,7 @@ const Guides = () => {
                         <div className="guide-item">
                             <div className="guide-img">
                                 <div className="guide-img-efects">
-                                    <Image src="/images/guide-2.jpg" className="img-fluid w-100 rounded-top" alt="Image" width={150} height={100}/>
+                                    <Image src="/images/guide-2.jpg" className="img-fluid w-100 rounded-top" alt="Image" width={150} height={100} sizes='10vw'/>
                                 </div>
                                 <div className="guide-icon rounded-pill p-2">
                                     <a className="btn btn-square btn-primary rounded-circle mx-1" href=""><i className="fab fa-facebook-f"></i></a>
@@ -57,7 +58,7 @@ const Guides = () => {
                         <div className="guide-item">
                             <div className="guide-img">
                                 <div className="guide-img-efects">
-                                    <Image src="/images/guide-3.jpg" className="img-fluid w-100 rounded-top" alt="Image" width={150} height={100}/>
+                                    <Image src="/images/guide-3.jpg" className="img-fluid w-100 rounded-top" alt="Image" width={150} height={100} sizes='10vw'/>
                                 </div>
                                 <div className="guide-icon rounded-pill p-2">
                                     <a className="btn btn-square btn-primary rounded-circle mx-1" href=""><i className="fab fa-facebook-f"></i></a>
@@ -78,7 +79,7 @@ const Guides = () => {
                         <div className="guide-item">
                             <div className="guide-img">
                                 <div className="guide-img-efects">
-                                    <Image src="/images/guide-4.jpg" className="img-fluid w-100 rounded-top" alt="Image" width={150} height={100}/>
+                                    <Image src="/images/guide-4.jpg" className="img-fluid w-100 rounded-top" alt="Image" width={150} height={100} sizes='10vw'/>
                                 </div>
                                 <div className="guide-icon rounded-pill p-2">
                                     <a className="btn btn-square btn-primary rounded-circle mx-1" href=""><i className="fab fa-facebook-f"></i></a>

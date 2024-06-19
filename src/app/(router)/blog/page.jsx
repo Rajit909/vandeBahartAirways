@@ -1,5 +1,7 @@
+"use client"
 import Image from 'next/image'
 import React from 'react'
+
 
 const Blog = () => {
   return (
@@ -17,7 +19,7 @@ const Blog = () => {
                         <div className="blog-item">
                             <div className="blog-img">
                                 <div className="blog-img-inner">
-                                    <Image className="img-fluid w-100 rounded-top" src="/images/blog-1.jpg" alt="Image" width={150} height={100}/>
+                                    <Image className="img-fluid w-100 rounded-top" src="/images/blog-1.jpg" alt="Image" width={150} height={100} sizes='10vw'/>
                                     <div className="blog-icon">
                                         <a href="#" className="my-auto"><i className="fas fa-link fa-2x text-white"></i></a>
                                     </div>
@@ -40,7 +42,7 @@ const Blog = () => {
                         <div className="blog-item">
                             <div className="blog-img">
                                 <div className="blog-img-inner">
-                                    <Image className="img-fluid w-100 rounded-top" src="/images/blog-2.jpg" alt="Image" width={150} height={100}/>
+                                    <Image className="img-fluid w-100 rounded-top" src="/images/blog-2.jpg" alt="Image" width={150} height={100} sizes='10vw'/>
                                     <div className="blog-icon">
                                         <a href="#" className="my-auto"><i className="fas fa-link fa-2x text-white"></i></a>
                                     </div>
@@ -63,7 +65,7 @@ const Blog = () => {
                         <div className="blog-item">
                             <div className="blog-img">
                                 <div className="blog-img-inner">
-                                    <Image className="img-fluid w-100 rounded-top" src="/images/blog-3.jpg" alt="Image" width={150} height={100}/>
+                                    <Image className="img-fluid w-100 rounded-top" src="/images/blog-3.jpg" alt="Image" width={150} height={100} sizes='10vw'/>
                                     <div className="blog-icon">
                                         <a href="#" className="my-auto"><i className="fas fa-link fa-2x text-white"></i></a>
                                     </div>

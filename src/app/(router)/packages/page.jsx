@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import React from 'react'
 
@@ -13,7 +14,7 @@ const Packages = () => {
                 <div className="packages-carousel owl-carousel">
                     <div className="packages-item">
                         <div className="packages-img">
-                            <Image src="/images/packages-4.jpg" className="img-fluid w-100 rounded-top" alt="Image" width={100} height={50}/>
+                            <Image src="/images/packages-4.jpg" className="img-fluid w-100 rounded-top" alt="Image" width={100} height={50} sizes='15vw'/>
                             <div className="packages-info d-flex border border-start-0 border-end-0 position-absolute" style={{width: "100%", bottom: "0", left: "0", zIndex: "5" }}>
                                 <small className="flex-fill text-center border-end py-2"><i className="fa fa-map-marker-alt me-2"></i>Venice - Italy</small>
                                 <small className="flex-fill text-center border-end py-2"><i className="fa fa-calendar-alt me-2"></i>3 days</small>

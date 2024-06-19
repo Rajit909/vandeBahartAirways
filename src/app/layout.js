@@ -12,8 +12,11 @@ import Head from "next/head";
 
 // Metadata object without the viewport setting
 export const metadata = {
-  title: "Vande Bharat Airways | - Experience Luxury in the Skies",
-  description:
+  title:{
+   default : "Vande Bharat Airways |  Experience Luxury in the Skies",
+   template : `%s | Vande Bharat Airways |  Experience Luxury in the Skies`
+  },
+   description:
     "Fly with Vande Bharat Airways for a luxurious and comfortable travel experience. Discover our premium services and book your flight today.",
   author: "Vande Bharat Airways",
   keywords: ["Vande bharat airways", "airways", "airlines", "flight booking"],

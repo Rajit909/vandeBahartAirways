@@ -2,7 +2,9 @@ import React from "react";
 import Image from "next/image";
 import Subscribe from "../../subscribe/page";
 
+
 const Aboutus = () => {
+  
   return (
     <div>
       <div className="container-fluid about py-5">
@@ -22,6 +24,7 @@ const Aboutus = () => {
                   alt=""
                   width={400}
                   height={100}
+                  sizes="10vw"
                 />
               </div>
             </div>

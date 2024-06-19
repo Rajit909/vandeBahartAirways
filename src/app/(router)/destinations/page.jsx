@@ -1,5 +1,7 @@
+"use client"
 import React from "react";
 import DestinationList from "./_components/destinationList";
+
 
 
 const Destinations = () => {

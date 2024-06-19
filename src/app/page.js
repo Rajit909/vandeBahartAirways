@@ -27,7 +27,7 @@ export default function Home() {
         // Assume data is fetched after 2 seconds
         setData(/* your fetched data */);
         setLoading(false); // Set loading to false when data fetching is complete
-    }, 1000);
+    }, 500);
 }, []);
 
   return (

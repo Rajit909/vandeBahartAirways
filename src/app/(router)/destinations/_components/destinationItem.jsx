@@ -13,6 +13,7 @@ const DestinationItem = ({ url, photosCount, name }) => {
           alt="destination"
           width={400}
           height={150}
+          sizes="10vw"
           />
           </a>
         </div>
