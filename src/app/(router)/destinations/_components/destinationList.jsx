@@ -1,6 +1,6 @@
 
 import React from "react";
-import DestinationItem from "./destinationItem";
+import DestinationItem from "./DestinationItem";
 
 const DestinationList = () => {
   return (

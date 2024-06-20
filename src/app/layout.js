@@ -18,8 +18,12 @@ export const metadata = {
   },
    description:
     "Fly with Vande Bharat Airways for a luxurious and comfortable travel experience. Discover our premium services and book your flight today.",
-  author: "Vande Bharat Airways",
+  author: [
+    {name: "Vande Bharat Airways"},
+    {name: "Rajit-kumar", url: "https://rajit-kumar.github.io"}
+  ],
   keywords: ["Vande bharat airways", "airways", "airlines", "flight booking"],
+  creator: "Vande Bharat Airways",
   canonical: "https://vandebharatairways.com",
   og: {
     title: "Vande Bharat Airways - Experience Luxury in the Skies",

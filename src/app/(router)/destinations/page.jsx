@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import DestinationList from "./_components/destinationList";
+import DestinationList from "./_components/DestinationList";
 
 
 

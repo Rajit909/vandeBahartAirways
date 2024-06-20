@@ -2,9 +2,19 @@
 const nextConfig = {
     reactStrictMode: false,
     
+    // images: {
+    //     remotePatterns: [0]['ap-south-1.graphassets.com/*'],
+    //   },
     images: {
-        remotePatterns: [0]['ap-south-1.graphassets.com/*'],
-      },
+      remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: 'ap-south-1.graphassets.com',
+          // port: '',
+          // pathname: '/account123/**',
+        },
+      ],
+    },
 };
 
 
