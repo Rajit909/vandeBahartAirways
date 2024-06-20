@@ -96,7 +96,7 @@ const Career = () => {
                           placeholder="Father's name"
                           required
                         />
-                        <label htmlFor="mobile">Father's name</label>
+                        <label htmlFor="mobile">Father &apos;s name</label>
                       </div>
                     </div>
                     <div className="col-md-4 mb-4">
