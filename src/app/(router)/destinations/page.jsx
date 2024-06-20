@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import DestinationList from "./_components/DestinationList";
+import DestinationList from "./_components/DestinationList.jsx";
 
 
 
@@ -88,7 +88,7 @@ const Destinations = () => {
             <div className="tab-content">
               <div id="tab-1" className="tab-pane fade show p-0 active">
                 <div className="row g-4">
-                  <DestinationList />
+                  <DestinationList/>
                 </div>
               </div>
             </div>
