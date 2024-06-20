@@ -11,7 +11,7 @@ const Career = () => {
             className="mx-auto text-center mb-5"
             style={{ maxWidth: "900px" }}
           >
-            <h5 className="section-title px-3">Apply for Jobs</h5>
+            <h5 className="section-title px-3 my-4">Apply for Jobs</h5>
             <h1 className="mb-0">
               Explore Job Opportunities, For Better Career
             </h1>
