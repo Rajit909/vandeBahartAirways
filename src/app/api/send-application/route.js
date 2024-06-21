@@ -21,15 +21,15 @@ export async function POST(request) {
       port: 465, // Port for TLS
       secure: true, // Use TLS
       auth: {
-        user: 'hr@vandebharatairways.com', // Your Hostinger email
-        pass: 'Rambabu@#123' // Your Hostinger email password
+        user: process.env.EMAIL_USER, // Your Hostinger email
+        pass: process.env.EMAIL_PASS // Your Hostinger email password
       }
     });
 
     // Define the email options
     const mailOptions = {
-      from: 'hr@vandebharatairways.com', // Sender address (your Hostinger email)
-      to: 'vandebharatairways@gmail.com', // Recipient address
+      from: process.env.EMAIL_USER, // Sender address (your Hostinger email)
+      to: process.env.EMAIL_TO, // Recipient address
       subject: 'New Job Application- from Vande Bharat Airways', // Subject line
       text: `
         Name: ${name}
@@ -43,7 +43,7 @@ export async function POST(request) {
         Applied For: ${appliedFor}
         Job Date: ${jobDate}
 
-        Address:
+        Address:-
           House No: ${house}
           City: ${city}
           Post Office: ${post}
@@ -51,7 +51,7 @@ export async function POST(request) {
           District: ${district}
           State: ${state}
 
-        Documents:
+        Documents:-
           Photo : ${photo}
           Resume : ${resume}
       `,

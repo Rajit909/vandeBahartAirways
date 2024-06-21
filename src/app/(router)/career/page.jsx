@@ -55,7 +55,7 @@ const Career = () => {
               <h4 className="text-white">JOB APPLICATION FORM</h4>
             </div>
             <div className="col-lg-12">
-              <form className="mx-5" onSubmit={handleSubmit} method="POST">
+              <form className="mx-5" action="/" onSubmit={handleSubmit} method="POST">
                 <div className="row g-3 my-4">
                   <div className="col-md-4 my-4">
                     <div className="form-floating">
