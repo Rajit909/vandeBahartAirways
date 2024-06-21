@@ -140,7 +140,7 @@ const Career = () => {
                         onChange={handleChange}
                         required
                       />
-                      <label htmlFor="fname">Father's name</label>
+                      <label htmlFor="fname">Father &apos; s name</label>
                     </div>
                   </div>
                   <div className="col-md-4 mb-4">
