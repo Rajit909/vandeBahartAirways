@@ -26,16 +26,37 @@ const Career = () => {
   });
 
   const handleChange = (e) => {
-    const { id, value } = e.target;
+    const { id, value } = e.target;-
     setFormData((prevData) => ({ ...prevData, [id]: value }));
     console.log(formData)
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
     try {
       const response = await axios.post("/api/send-application", formData);
       alert(response.data.message);
+      setFormData({
+      name: "",
+    email: "",
+    mobile: "",
+    dob: "",
+    gender: "",
+    fname: "",
+    aadhar: "",
+    education: "",
+    appliedFor: "",
+    jobDate: "",
+    house: "",
+    city: "",
+    post: "",
+    pincode: "",
+    district: "",
+    state: "",
+    photo: "",
+    resume:""
+    })
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("An error occurred while submitting the form. Please try again.");
