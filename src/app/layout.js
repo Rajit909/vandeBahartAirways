@@ -40,6 +40,15 @@ export const metadata = {
       "Fly with Vande Bharat Airways for a luxurious and comfortable travel experience. Discover our premium services and book your flight today.",
     image: "https://vandebharatairways.com/images/twitter-image.jpg",
   },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://vandebharatairways.com",
+    site_name: "Vande Bharat Airways",
+  },
+  verification: {
+    google: "phIzV2yZ3mu6Z0OGl51Hn9PgYTAOuK8-jfwq1OnugaE",
+  }
 };
 
 // Separate viewport settings function for Next.js best practices
