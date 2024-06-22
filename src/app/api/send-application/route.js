@@ -16,6 +16,9 @@ export async function POST(request) {
     // Log the received data for debugging purposes
     console.log('Received form data:', body);
 
+    console.log(process.env.EMAIL_USER)
+    console.log(process.env.EMAIL_PASS)
+
     // Configure Nodemailer transporter with Hostinger SMTP settings
     const transporter = nodemailer.createTransport({
       host: 'smtp.hostinger.com', // Hostinger SMTP server
