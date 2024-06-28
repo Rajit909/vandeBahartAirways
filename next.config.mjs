@@ -4,7 +4,7 @@ const nextConfig = {
     
     // images: {
     //     remotePatterns: [0]['ap-south-1.graphassets.com/*'],
-    //   },
+    //   },n
     images: {
       remotePatterns: [
         {

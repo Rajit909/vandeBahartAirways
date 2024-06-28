@@ -1,11 +1,12 @@
 "use client";
 // pages/career.js or pages/your-page.js
 import React, { useState } from "react";
-// import Subscribe from '../subscribe/page';
-import axios from "axios";
 
 const Career = () => {
-  const [formData, setFormData] = useState({
+  const [resumeFile, setResumeFile] = useState(null);
+  const [photoFile, setPhotoFile] = useState(null);
+
+  const [userData, setUserData] = useState({
     name: "",
     email: "",
     mobile: "",
@@ -22,44 +23,57 @@ const Career = () => {
     pincode: "",
     district: "",
     state: "",
-    
   });
 
+  const handleResumeChange = (event) => {
+    const file = event.target.files[0];
+    setResumeFile(file);
+  };
+
+  const handlePhotoChange = (event) => {
+    const file = event.target.files[0];
+    setPhotoFile(file);
+  };
+
   const handleChange = (e) => {
-    const { id, value } = e.target;-
-    setFormData((prevData) => ({ ...prevData, [id]: value }));
-    console.log(formData)
+    const { id, value } = e.target;
+    setUserData((prevData) => ({ ...prevData, [id]: value }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     try {
-      const response = await axios.post("/api/send-application", formData);
-      alert(response.data.message);
-      setFormData({
-      name: "",
-    email: "",
-    mobile: "",
-    dob: "",
-    gender: "",
-    fname: "",
-    aadhar: "",
-    education: "",
-    appliedFor: "",
-    jobDate: "",
-    house: "",
-    city: "",
-    post: "",
-    pincode: "",
-    district: "",
-    state: "",
-    photo: "",
-    resume:""
-    })
+      const formData = new FormData();
+      formData.append("photo", photoFile);
+      formData.append("resume", resumeFile);
+      Object.keys(userData).forEach((key) => {
+        formData.append(key, userData[key]);
+      });
+
+      const response = await fetch("/api/upload", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const result = await response.json();
+      if (result.success) {
+        alert(result.message);
+        Object.keys(userData).forEach((key) => {
+          setUserData((prevData) => ({ ...prevData, [key]: "" }));
+        });
+        setPhotoFile("");
+        setResumeFile("");
+      } else {
+        alert("Failed to submit application.");
+      }
     } catch (error) {
       console.error("Error submitting form:", error);
-      alert("An error occurred while submitting the form. Please try again.");
+      alert("An error occurred while submitting the form. Please try again!");
     }
   };
 
@@ -76,7 +90,11 @@ const Career = () => {
               <h4 className="text-white">JOB APPLICATION FORM</h4>
             </div>
             <div className="col-lg-12">
-              <form className="mx-5" action="/" onSubmit={handleSubmit} method="POST">
+              <form
+                className="mx-5"
+                onSubmit={handleSubmit}
+                encType="multipart/form-data"
+              >
                 <div className="row g-3 my-4">
                   <div className="col-md-4 my-4">
                     <div className="form-floating">
@@ -84,8 +102,9 @@ const Career = () => {
                         type="text"
                         className="form-control border-0"
                         id="name"
+                        name="name"
                         placeholder="Full Name"
-                        value={formData.name}
+                        value={userData.name}
                         onChange={handleChange}
                         required
                       />
@@ -98,8 +117,9 @@ const Career = () => {
                         type="email"
                         className="form-control border-0"
                         id="email"
+                        name="email"
                         placeholder="Your Email"
-                        value={formData.email}
+                        value={userData.email}
                         onChange={handleChange}
                         required
                       />
@@ -112,8 +132,9 @@ const Career = () => {
                         type="text"
                         className="form-control border-0"
                         id="mobile"
+                        name="mobile"
                         placeholder="Mobile no."
-                        value={formData.mobile}
+                        value={userData.mobile}
                         onChange={handleChange}
                       />
                       <label htmlFor="mobile">Mobile no.</label>
@@ -125,8 +146,9 @@ const Career = () => {
                         type="date"
                         className="form-control border-0"
                         id="dob"
+                        name="dob"
                         placeholder="Date of Birth"
-                        value={formData.dob}
+                        value={userData.dob}
                         onChange={handleChange}
                       />
                       <label htmlFor="dob">D.O.B</label>
@@ -137,7 +159,8 @@ const Career = () => {
                       <select
                         className="form-select"
                         id="gender"
-                        value={formData.gender}
+                        name="gender"
+                        value={userData.gender}
                         onChange={handleChange}
                         required
                       >
@@ -156,8 +179,9 @@ const Career = () => {
                         type="text"
                         className="form-control border-0"
                         id="fname"
+                        name="fname"
                         placeholder="Father's name"
-                        value={formData.fname}
+                        value={userData.fname}
                         onChange={handleChange}
                         required
                       />
@@ -170,8 +194,9 @@ const Career = () => {
                         type="text"
                         className="form-control border-0"
                         id="aadhar"
+                        name="aadhar"
                         placeholder="Aadhar no."
-                        value={formData.aadhar}
+                        value={userData.aadhar}
                         onChange={handleChange}
                         required
                       />
@@ -183,7 +208,8 @@ const Career = () => {
                       <select
                         className="form-select"
                         id="education"
-                        value={formData.education}
+                        name="education"
+                        value={userData.education}
                         onChange={handleChange}
                         required
                       >
@@ -197,11 +223,17 @@ const Career = () => {
                       </select>
                     </div>
                   </div>
-                  
 
                   <div className="col-md-4 mb-4">
                     <div className="form-floating">
-                      <select className="form-select" required id="appliedFor" name="appliedFor" value={formData.appliedFor} onChange={handleChange}>
+                      <select
+                        className="form-select"
+                        required
+                        id="appliedFor"
+                        name="appliedFor"
+                        value={userData.appliedFor}
+                        onChange={handleChange}
+                      >
                         <option value="Travel Agent">Travel Agent</option>
                         <option value="Tourism Executive">
                           Tourism Executive
@@ -241,8 +273,9 @@ const Career = () => {
                         type="date"
                         className="form-control border-0"
                         id="jobDate"
+                        name="jobDate"
                         placeholder="Job Date"
-                        value={formData.jobDate}
+                        value={userData.jobDate}
                         onChange={handleChange}
                       />
                       <label htmlFor="jobDate">Job Date</label>
@@ -254,8 +287,9 @@ const Career = () => {
                         type="text"
                         className="form-control border-0"
                         id="house"
+                        name="house"
                         placeholder="House No."
-                        value={formData.house}
+                        value={userData.house}
                         onChange={handleChange}
                         required
                       />
@@ -268,8 +302,9 @@ const Career = () => {
                         type="text"
                         className="form-control border-0"
                         id="city"
+                        name="city"
                         placeholder="City/Village"
-                        value={formData.city}
+                        value={userData.city}
                         onChange={handleChange}
                         required
                       />
@@ -282,8 +317,9 @@ const Career = () => {
                         type="text"
                         className="form-control border-0"
                         id="post"
+                        name="post"
                         placeholder="Post Office"
-                        value={formData.post}
+                        value={userData.post}
                         onChange={handleChange}
                         required
                       />
@@ -296,8 +332,9 @@ const Career = () => {
                         type="text"
                         className="form-control border-0"
                         id="pincode"
+                        name="pincode"
                         placeholder="Pincode"
-                        value={formData.pincode}
+                        value={userData.pincode}
                         onChange={handleChange}
                         required
                       />
@@ -311,7 +348,8 @@ const Career = () => {
                         className="form-control border-0"
                         id="district"
                         placeholder="District"
-                        value={formData.district}
+                        name="district"
+                        value={userData.district}
                         onChange={handleChange}
                         required
                       />
@@ -319,54 +357,75 @@ const Career = () => {
                     </div>
                   </div>
                   <div className="col-md-4 mb-4">
-                      <div className="form-floating">
-                        <select
-                          className="form-select"
-                          name="state"
-                          id="state"
-                          value={formData.state}
-                          onChange={handleChange}
-                          required
-                        >
-                          <option value="">Select State</option>
-                          <option value="ANDHRA PRADESH">ANDHRA PRADESH</option>
-                          <option value="ASSAM">ASSAM</option>
-                          <option value="ARUNACHAL PRADESH">ARUNACHAL PRADESH</option>
-                          <option value="BIHAR">BIHAR</option>
-                          <option value="GUJRAT">GUJRAT</option>
-                          <option value="HARYANA">HARYANA</option>
-                          <option value="HIMACHAL PRADESH">HIMACHAL PRADESH</option>
-                          <option value="JAMMU KASHMIR">JAMMU &amp; KASHMIR</option>
-                          <option value="KARNATAKA">KARNATAKA</option>
-                          <option value="KERALA">KERALA</option>
-                          <option value="MADHYA PRADESH">MADHYA PRADESH</option>
-                          <option value="MAHARASHTRA">MAHARASHTRA</option>
-                          <option value="MANIPUR">MANIPUR</option>
-                          <option value="MEGHALAYA">MEGHALAYA</option>
-                          <option value="MIZORAM">MIZORAM</option>
-                          <option value="NAGALAND">NAGALAND</option>
-                          <option value="ORISSA">ORISSA</option>
-                          <option value="PUNJAB">PUNJAB</option>
-                          <option value="RAJASTHAN">RAJASTHAN</option>
-                          <option value="SIKKIM">SIKKIM</option>
-                          <option value="TAMIL NADU">TAMIL NADU</option>
-                          <option value="TRIPURA">TRIPURA</option>
-                          <option value="UTTAR PRADESH">UTTAR PRADESH</option>
-                          <option value="WEST BENGAL">WEST BENGAL</option>
-                          <option value="DELHI">DELHI</option>
-                          <option value="GOA">GOA</option>
-                          <option value="PONDICHERY">PONDICHERY</option>
-                          <option value="LAKSHDWEEP">LAKSHDWEEP</option>
-                          <option value="DAMAN and DIU">DAMAN &amp; DIU</option>
-                          <option value="DADRA and NAGAR">DADRA &amp; NAGAR</option>
-                          <option value="CHANDIGARH">CHANDIGARH</option>
-                          <option value="ANDAMAN and NICOBAR">ANDAMAN &amp; NICOBAR</option>
-                          <option value="UTTARANCHAL">UTTARANCHAL</option>
-                          <option value="JHARKHAND">JHARKHAND</option>
-                          <option value="CHATTISGARH">CHATTISGARH</option>
-                        </select>
-                      </div>
+                    <div className="form-floating">
+                      <select
+                        className="form-select"
+                        name="state"
+                        id="state"
+                        value={userData.state}
+                        onChange={handleChange}
+                        required
+                      >
+                        <option value="">Select State</option>
+                        <option value="ANDHRA PRADESH">ANDHRA PRADESH</option>
+                        <option value="ASSAM">ASSAM</option>
+                        <option value="ARUNACHAL PRADESH">
+                          ARUNACHAL PRADESH
+                        </option>
+                        <option value="BIHAR">BIHAR</option>
+                        <option value="GUJRAT">GUJRAT</option>
+                        <option value="HARYANA">HARYANA</option>
+                        <option value="HIMACHAL PRADESH">
+                          HIMACHAL PRADESH
+                        </option>
+                        <option value="JAMMU KASHMIR">
+                          JAMMU &amp; KASHMIR
+                        </option>
+                        <option value="KARNATAKA">KARNATAKA</option>
+                        <option value="KERALA">KERALA</option>
+                        <option value="MADHYA PRADESH">MADHYA PRADESH</option>
+                        <option value="MAHARASHTRA">MAHARASHTRA</option>
+                        <option value="MANIPUR">MANIPUR</option>
+                        <option value="MEGHALAYA">MEGHALAYA</option>
+                        <option value="MIZORAM">MIZORAM</option>
+                        <option value="NAGALAND">NAGALAND</option>
+                        <option value="ORISSA">ORISSA</option>
+                        <option value="PUNJAB">PUNJAB</option>
+                        <option value="RAJASTHAN">RAJASTHAN</option>
+                        <option value="SIKKIM">SIKKIM</option>
+                        <option value="TAMIL NADU">TAMIL NADU</option>
+                        <option value="TRIPURA">TRIPURA</option>
+                        <option value="UTTAR PRADESH">UTTAR PRADESH</option>
+                        <option value="WEST BENGAL">WEST BENGAL</option>
+                        <option value="DELHI">DELHI</option>
+                        <option value="GOA">GOA</option>
+                        <option value="PONDICHERY">PONDICHERY</option>
+                        <option value="LAKSHDWEEP">LAKSHDWEEP</option>
+                        <option value="DAMAN and DIU">DAMAN &amp; DIU</option>
+                        <option value="DADRA and NAGAR">
+                          DADRA &amp; NAGAR
+                        </option>
+                        <option value="CHANDIGARH">CHANDIGARH</option>
+                        <option value="ANDAMAN and NICOBAR">
+                          ANDAMAN &amp; NICOBAR
+                        </option>
+                        <option value="UTTARANCHAL">UTTARANCHAL</option>
+                        <option value="JHARKHAND">JHARKHAND</option>
+                        <option value="CHATTISGARH">CHATTISGARH</option>
+                      </select>
                     </div>
+                  </div>
+                  {/* {imageUrl && (
+                    <div className="border w-50">
+                      <p>Uploaded Image Preview</p>
+                      <Image
+                        src={imageUrl}
+                        alt="Uploaded Image"
+                        width={180}
+                        height={150}
+                      />
+                    </div>
+                  )} */}
 
                   <div className="col-md-4 mb-4">
                     <div className="form-floating">
@@ -374,7 +433,8 @@ const Career = () => {
                         type="file"
                         className="form-control border-0"
                         id="photo"
-                        value={formData.photo}
+                        name="photo"
+                        onChange={handlePhotoChange}
                         placeholder="Upload Photo"
                         required
                       />
@@ -387,7 +447,8 @@ const Career = () => {
                         type="file"
                         className="form-control border-0"
                         id="resume"
-                        value={formData.resume}
+                        name="resume"
+                        onChange={handleResumeChange}
                         placeholder="Upload Resume"
                         required
                       />
@@ -404,6 +465,7 @@ const Career = () => {
                   </button>
                 </div>
               </form>
+              {/* {errorMessage && <p>{errorMessage}</p>} */}
             </div>
           </div>
         </div>
