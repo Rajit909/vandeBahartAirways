@@ -90,10 +90,7 @@ export async function POST(request) {
     await transporter.sendMail(mailOptions);
 
     // cleanup files
-    files.forEach((file) => {
-      fs.unlinkSync(file);
-    })
-
+    
     // Return a success response
     return NextResponse.json({ success: true, message: 'Application submitted successfully!' }, { status: 200 });
   } catch (error) {
