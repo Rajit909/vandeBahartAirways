@@ -2,10 +2,10 @@
 import Footer from "./(router)/_components/Navbar/Footer";
 import NavBar from "./(router)/_components/Navbar/NavBar";
 import "./globals.css";
-import "/public/css/style.css";
-import "/public/css/bootstrap.min.css";
 import "/public/lib/owlcarousel/assets/owl.carousel.min.css";
 import "/public/lib/lightbox/css/lightbox.min.css";
+import "/public/css/bootstrap.min.css";
+import "/public/css/style.css";
 
 import Script from "next/script";
 import Head from "next/head";
@@ -81,6 +81,9 @@ export default function RootLayout({ children }) {
         {/* Canonical URL */}
         <link rel="canonical" href={metadata.canonical} />
         
+        <link rel="" href="/favicon.ico" />
+
+
         {/* Open Graph / Facebook Meta Tags */}
         <meta property="og:title" content={metadata.og.title} />
         <meta property="og:description" content={metadata.og.description} />
@@ -93,7 +96,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:title" content={metadata.twitter.title} />
         <meta name="twitter:description" content={metadata.twitter.description} />
         <meta name="twitter:image" content={metadata.twitter.image} />
-        
+
         
         {/* Structured Data (JSON-LD) */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{
@@ -138,6 +141,8 @@ export default function RootLayout({ children }) {
             }
           })
         }} />        
+
+        
       </Head>
       
       <body>

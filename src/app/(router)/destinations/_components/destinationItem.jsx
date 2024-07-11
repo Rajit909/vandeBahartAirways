@@ -5,16 +5,16 @@ const DestinationItem = ({ url, photosCount, name }) => {
   return (
     <>
       <div className="destination-img ">
-      <div className="search-icon">
+        <div className="search-icon">
           <a href={url} data-lightbox="destination-1">
-        <Image
-          className="img-fluid rounded w-100"
-          src={url}
-          alt="destination"
-          width={400}
-          height={150}
-          sizes="10vw"
-          />
+            <Image
+              className="img-fluid rounded w-100"
+              src={url}
+              alt="destination"
+              width={400}
+              height={150}
+              sizes="10vw"
+            />
           </a>
         </div>
 
@@ -30,7 +30,6 @@ const DestinationItem = ({ url, photosCount, name }) => {
             View All Place <i className="fa fa-arrow-right ms-2"></i>
           </a>
         </div>
-        
       </div>
     </>
   );
