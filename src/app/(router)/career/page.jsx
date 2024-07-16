@@ -1,10 +1,17 @@
 "use client";
+import { useRouter } from "next/navigation";
 // pages/career.js or pages/your-page.js
 import React, { useState } from "react";
+
 
 const Career = () => {
   const [resumeFile, setResumeFile] = useState(null);
   const [photoFile, setPhotoFile] = useState(null);
+
+  const [isLoading, setIsLoading] = useState(false);
+  const router = useRouter();
+
+
 
   const [userData, setUserData] = useState({
     name: "",
@@ -42,7 +49,7 @@ const Career = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    setIsLoading(true)
     try {
       const formData = new FormData();
       formData.append("photo", photoFile);
@@ -68,12 +75,16 @@ const Career = () => {
         });
         setPhotoFile("");
         setResumeFile("");
+
+        router.push("/")
       } else {
         alert("Failed to submit application.");
       }
     } catch (error) {
       console.error("Error submitting form:", error);
       alert("An error occurred while submitting the form. Please try again!");
+    }finally{
+      setIsLoading(false)
     }
   };
 
@@ -461,7 +472,18 @@ const Career = () => {
                     className="btn btn-primary py-3 px-5 mb-4 w-100"
                     type="submit"
                   >
-                    Submit
+                   {isLoading ? 
+                                   <div className="text-md">
+
+                                   <span
+                                   className="spinner-border spinner-border-sm mb-1 mr-2"
+                                   role="status"
+                                   aria-hidden="true"
+                                   ></span>
+                                 Please wait...
+                                   </div>
+                                   : 
+                                   'Register now'}
                   </button>
                 </div>
               </form>

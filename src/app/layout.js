@@ -6,9 +6,11 @@ import "/public/lib/owlcarousel/assets/owl.carousel.min.css";
 import "/public/lib/lightbox/css/lightbox.min.css";
 import "/public/css/bootstrap.min.css";
 import "/public/css/style.css";
+import NextTopLoader from 'nextjs-toploader';
 
 import Script from "next/script";
 import Head from "next/head";
+import { AOSInit } from "./(router)/_components/AOS";
 
 // Metadata object without the viewport setting
 export const metadata = {
@@ -146,7 +148,17 @@ export default function RootLayout({ children }) {
       </Head>
       
       <body>
+        <NextTopLoader 
+        color="#5700ff" 
+        showSpinner={false}
+        height={5}
+        easing="ease"
+        speed={200}
+        shadow="0 0 10px #2299DD,0 0 5px #2299DD"
+        />
         <NavBar />
+        {/* aosinit */}
+        <AOSInit/>
         <main>{children}</main>
         <Footer />
         <a

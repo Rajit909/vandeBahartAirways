@@ -5,10 +5,19 @@ const Services = () => {
   return (
     <>
       <div className="container-fluid bg-light service py-5">
-        <div className="container py-5">
+        <div className="container py-5" data-aos="slide-left" 
+        // data-aos-offset="200"
+        // data-aos-delay="10"
+        data-aos-duration="800"
+        data-aos-easing="ease-in"
+        // data-aos-mirror="true"
+        // data-aos-once="true"
+        // data-aos-anchor-placement="top-center"
+        >
           <div
             className="mx-auto text-center mb-5"
             style={{ maxWidth: "900px" }}
+            
           >
             <h5 className="section-title px-3">Searvices</h5>
             <h1 className="mb-0">Our Services</h1>

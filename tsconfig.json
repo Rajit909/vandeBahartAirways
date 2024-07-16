@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/app/api/upload/route.js"  ],
+, "src2/app/api/upload/route.js"  ],
   "exclude": [
     "node_modules"
   ]

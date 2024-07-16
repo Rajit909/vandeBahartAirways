@@ -1,16 +1,25 @@
 
 import nodemailer from 'nodemailer';
 import { NextResponse } from 'next/server';
-import fs from 'fs';
+// import fs from 'fs';
 import path from 'path';
+import { put } from '@vercel/blob';
 
 // Helper function to save file to disk and return its path
 async function saveFile(file) {
-  const buffer = await file.arrayBuffer();
-  const bytes = new Uint8Array(buffer);
-  const filePath = path.join(process.cwd(), 'public', 'uploads', file.name);
-  fs.writeFileSync(filePath, bytes);
-  return filePath;
+  // const buffer = await file.arrayBuffer();
+  // const bytes = new Uint8Array(buffer);
+  // const filePath = path.join(process.cwd(), 'public', 'uploads', file.name);
+  // fs.writeFileSync(filePath, bytes);
+  // return filePath;
+  
+  const response = await put(file.name, file,{
+    access: "public"
+  })
+  // console.log(response)
+  return (response.url); // Return the URL of the uploaded file
+
+
 }
 
 // Named export for the POST method
