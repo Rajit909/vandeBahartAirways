@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Subscribe from "../../subscribe/page";
+import Subscribe from "../../_components/Subscribe";
 
 
 const Aboutus = () => {

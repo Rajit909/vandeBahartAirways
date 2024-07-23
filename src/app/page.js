@@ -2,7 +2,7 @@
 
 // import About from "./(router)/about/page";
 import Destinations from "./(router)/destinations/page";
-import Hero from "./(router)/hero/page";
+import Hero from "./(router)/_components/Hero";
 import Services from "./(router)/services/page";
 import Tour from "./(router)/tour/page";
 import Packages from "./(router)/packages/page";
@@ -10,7 +10,7 @@ import Gallery from "./(router)/gallery/page";
 import Bookings from "./(router)/bookings/page";
 // import Guides from "./(router)/guides/page";
 // import Testimonials from "./(router)/testemonials/page";
-import Subscribe from "./(router)/subscribe/page";
+import Subscribe from "./(router)/_components/Subscribe";
 import { useEffect, useState } from "react";
 import Loading from "./(router)/loading";
 // import Blog from "./(router)/blog/page";

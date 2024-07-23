@@ -149,7 +149,7 @@ export default function RootLayout({ children }) {
       
       <body>
         <NextTopLoader 
-        color="#5700ff" 
+        color="white" 
         showSpinner={false}
         height={5}
         easing="ease"

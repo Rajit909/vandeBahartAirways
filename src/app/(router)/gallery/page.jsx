@@ -42,11 +42,11 @@ const Gallery = () => {
                     </li>
                 </ul>
                 <div className="tab-content">
-                    <div id="GalleryTab-1" className="tab-pane fade show p-0 active">
+                    <div id="GalleryTab-1" className="tab-pane fade show p-0 active" data-aos="fade-right">
                         <div className="row g-2">
                             <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
                                 <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-1.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='10vw'/>
+                                    <Image src="/images/gallery-1.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
                                     <div className="gallery-content">
                                         <div className="gallery-info">
                                             <h5 className="text-white text-uppercase mb-2">World Tour</h5>
@@ -74,7 +74,7 @@ const Gallery = () => {
                             </div>
                             <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
                                 <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-3.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='10vw'/>
+                                    <Image src="/images/gallery-3.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
                                     <div className="gallery-content">
                                         <div className="gallery-info">
                                             <h5 className="text-white text-uppercase mb-2">World Tour</h5>
@@ -88,7 +88,7 @@ const Gallery = () => {
                             </div>
                             <div className="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-4.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='10vw'/>
+                                    <Image src="/images/gallery-4.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
                                     <div className="gallery-content">
                                         <div className="gallery-info">
                                             <h5 className="text-white text-uppercase mb-2">World Tour</h5>
@@ -102,7 +102,7 @@ const Gallery = () => {
                             </div>
                             <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
                                 <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-5.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='10vw'/>
+                                    <Image src="/images/gallery-5.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
                                     <div className="gallery-content">
                                         <div className="gallery-info">
                                             <h5 className="text-white text-uppercase mb-2">World Tour</h5>
@@ -116,7 +116,7 @@ const Gallery = () => {
                             </div>
                             <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
                                 <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-6.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='10vw'/>
+                                    <Image src="/images/gallery-6.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
                                     <div className="gallery-content">
                                         <div className="gallery-info">
                                             <h5 className="text-white text-uppercase mb-2">World Tour</h5>
@@ -130,7 +130,7 @@ const Gallery = () => {
                             </div>
                             <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3">
                                 <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-7.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='10vw'/>
+                                    <Image src="/images/gallery-7.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
                                     <div className="gallery-content">
                                         <div className="gallery-info">
                                             <h5 className="text-white text-uppercase mb-2">World Tour</h5>
@@ -144,7 +144,7 @@ const Gallery = () => {
                             </div>
                             <div className="col-sm-6 col-md-6 col-lg-3 col-xl-2">
                                 <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-8.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='10vw'/>
+                                    <Image src="/images/gallery-8.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
                                     <div className="gallery-content">
                                         <div className="gallery-info">
                                             <h5 className="text-white text-uppercase mb-2">World Tour</h5>
@@ -158,7 +158,7 @@ const Gallery = () => {
                             </div>
                             <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3">
                                 <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-9.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='10vw'/>
+                                    <Image src="/images/gallery-9.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
                                     <div className="gallery-content">
                                         <div className="gallery-info">
                                             <h5 className="text-white text-uppercase mb-2">World Tour</h5>
@@ -172,7 +172,7 @@ const Gallery = () => {
                             </div>
                             <div className="col-sm-6 col-md-6 col-lg-3 col-xl-2">
                                 <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-10.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='10vw'/>
+                                    <Image src="/images/gallery-10.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
                                     <div className="gallery-content">
                                         <div className="gallery-info">
                                             <h5 className="text-white text-uppercase mb-2">World Tour</h5>
@@ -190,7 +190,7 @@ const Gallery = () => {
                         <div className="row g-2">
                             <div className="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-2.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='10vw'/>
+                                    <Image src="/images/gallery-2.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
                                     <div className="gallery-content">
                                         <div className="gallery-info">
                                             <h5 className="text-white text-uppercase mb-2">World Tour</h5>
@@ -204,7 +204,7 @@ const Gallery = () => {
                             </div>
                             <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
                                 <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-3.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='10vw'/>
+                                    <Image src="/images/gallery-3.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
                                     <div className="gallery-content">
                                         <div className="gallery-info">
                                             <h5 className="text-white text-uppercase mb-2">World Tour</h5>
@@ -222,7 +222,7 @@ const Gallery = () => {
                         <div className="row g-2">
                             <div className="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-2.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='10vw'/>
+                                    <Image src="/images/gallery-2.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
                                     <div className="gallery-content">
                                         <div className="gallery-info">
                                             <h5 className="text-white text-uppercase mb-2">World Tour</h5>
@@ -236,7 +236,7 @@ const Gallery = () => {
                             </div>
                             <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
                                 <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-3.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='10vw'/>
+                                    <Image src="/images/gallery-3.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
                                     <div className="gallery-content">
                                         <div className="gallery-info">
                                             <h5 className="text-white text-uppercase mb-2">World Tour</h5>
@@ -254,7 +254,7 @@ const Gallery = () => {
                         <div className="row g-2">
                             <div className="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-2.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='10vw'/>
+                                    <Image src="/images/gallery-2.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
                                     <div className="gallery-content">
                                         <div className="gallery-info">
                                             <h5 className="text-white text-uppercase mb-2">World Tour</h5>
@@ -268,7 +268,7 @@ const Gallery = () => {
                             </div>
                             <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
                                 <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-3.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='10vw'/>
+                                    <Image src="/images/gallery-3.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
                                     <div className="gallery-content">
                                         <div className="gallery-info">
                                             <h5 className="text-white text-uppercase mb-2">World Tour</h5>
@@ -286,7 +286,7 @@ const Gallery = () => {
                         <div className="row g-2">
                             <div className="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-2.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='10vw'/>
+                                    <Image src="/images/gallery-2.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
                                     <div className="gallery-content">
                                         <div className="gallery-info">
                                             <h5 className="text-white text-uppercase mb-2">World Tour</h5>
@@ -300,7 +300,7 @@ const Gallery = () => {
                             </div>
                             <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
                                 <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-3.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='10vw'/>
+                                    <Image src="/images/gallery-3.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
                                     <div className="gallery-content">
                                         <div className="gallery-info">
                                             <h5 className="text-white text-uppercase mb-2">World Tour</h5>

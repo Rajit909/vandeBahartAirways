@@ -11,7 +11,7 @@ const Packages = () => {
                     <h5 className="section-title px-3">Packages</h5>
                     <h1 className="mb-0">Awesome Packages</h1>
                 </div>
-                <div className="packages-carousel owl-carousel">
+                <div className="packages-carousel owl-carousel" data-aos="fade-left">
                     <div className="packages-item">
                         <div className="packages-img">
                             <Image src="/images/packages-4.jpg" className="img-fluid w-100 rounded-top" alt="Image" width={100} height={50} sizes='15vw'/>

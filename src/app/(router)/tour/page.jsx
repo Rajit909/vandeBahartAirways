@@ -29,12 +29,12 @@ const Tour = () => {
                             </a>
                         </li>
                     </ul>
-                    <div className="tab-content">
+                    <div className="tab-content" data-aos="fade-right">
                         <div id="NationalTab-1" className="tab-pane fade show p-0 active">
                             <div className="row g-4">
                                 <div className="col-md-6 col-lg-4">
                                     <div className="national-item">
-                                        <Image src="/images/explore-tour-1.jpg" className="img-fluid w-100 rounded" alt="Image" width={100} height={50}/>
+                                        <Image src="/images/explore-tour-1.jpg" className="img-fluid w-100 rounded" alt="Image" width={400} height={200}/>
                                         <div className="national-content">
                                             <div className="national-info">
                                                 <h5 className="text-white text-uppercase mb-2">Weekend Tour</h5>
@@ -48,7 +48,7 @@ const Tour = () => {
                                 </div>
                                 <div className="col-md-6 col-lg-4">
                                     <div className="national-item">
-                                    <Image src="/images/explore-tour-2.jpg" className="img-fluid w-100 rounded" alt="Image" width={100} height={50}/>
+                                    <Image src="/images/explore-tour-2.jpg" className="img-fluid w-100 rounded" alt="Image" width={400} height={200}/>
                                         
                                         <div className="national-content">
                                             <div className="national-info">
@@ -63,7 +63,7 @@ const Tour = () => {
                                 </div>
                                 <div className="col-md-6 col-lg-4">
                                     <div className="national-item">
-                                    <Image src="/images/explore-tour-3.jpg" className="img-fluid w-100 rounded" alt="Image" width={100} height={50}/>
+                                    <Image src="/images/explore-tour-3.jpg" className="img-fluid w-100 rounded" alt="Image" width={400} height={200}/>
                                         
                                         <div className="national-content">
                                             <div className="national-info">
@@ -79,7 +79,7 @@ const Tour = () => {
                                 </div>
                                 <div className="col-md-6 col-lg-4">
                                     <div className="national-item">
-                                    <Image src="/images/explore-tour-4.jpg" className="img-fluid w-100 rounded" alt="Image" width={100} height={50}/>
+                                    <Image src="/images/explore-tour-4.jpg" className="img-fluid w-100 rounded" alt="Image" width={400} height={200}/>
                                         
                                         <div className="national-content">
                                             <div className="national-info">
@@ -94,7 +94,7 @@ const Tour = () => {
                                 </div>
                                 <div className="col-md-6 col-lg-4">
                                     <div className="national-item">
-                                    <Image src="/images/explore-tour-5.jpg" className="img-fluid w-100 rounded" alt="Image" width={100} height={50}/>
+                                    <Image src="/images/explore-tour-5.jpg" className="img-fluid w-100 rounded" alt="Image" width={400} height={200}/>
                                         
                                         <div className="national-content">
                                             <div className="national-info">
@@ -110,7 +110,7 @@ const Tour = () => {
                                 </div>
                                 <div className="col-md-6 col-lg-4">
                                     <div className="national-item">
-                                    <Image src="/images/explore-tour-6.jpg" className="img-fluid w-100 rounded" alt="Image" width={100} height={50}/>
+                                    <Image src="/images/explore-tour-6.jpg" className="img-fluid w-100 rounded" alt="Image" width={400} height={200}/>
                                         
                                         <div className="national-content">
                                             <div className="national-info">
@@ -128,7 +128,7 @@ const Tour = () => {
                         <div id="InternationalTab-2" className="tab-pane fade show p-0">
                             <div className="InternationalTour-carousel owl-carousel">
                                 <div className="international-item">
-                                <Image src="/images/explore-tour-7.jpg" className="img-fluid w-100 rounded" alt="Image" width={100} height={50}/>
+                                <Image src="/images/explore-tour-7.jpg" className="img-fluid w-100 rounded" alt="Image" width={400} height={200}/>
                                     
                                     <div className="international-content">
                                         <div className="international-info">
@@ -143,7 +143,7 @@ const Tour = () => {
                                     </div>
                                 </div>
                                 <div className="international-item">
-                                <Image src="/images/explore-tour-8.jpg" className="img-fluid w-100 rounded" alt="Image" width={100} height={50}/>
+                                <Image src="/images/explore-tour-8.jpg" className="img-fluid w-100 rounded" alt="Image" width={400} height={200}/>
                                     
                                     <div className="international-content">
                                         <div className="international-info">
@@ -157,7 +157,7 @@ const Tour = () => {
                                     </div>
                                 </div>
                                 <div className="international-item">
-                                <Image src="/images/explore-tour-1.jpg" className="img-fluid w-100 rounded" alt="Image" width={100} height={50}/>
+                                <Image src="/images/explore-tour-1.jpg" className="img-fluid w-100 rounded" alt="Image" width={400} height={200}/>
                                     
                                     <div className="international-content">
                                         <div className="tour-offer bg-warning">45% Off</div>
@@ -172,7 +172,7 @@ const Tour = () => {
                                     </div>
                                 </div>
                                 <div className="international-item">
-                                <Image src="/images/explore-tour-4.jpg" className="img-fluid w-100 rounded" alt="Image" width={100} height={50}/>
+                                <Image src="/images/explore-tour-4.jpg" className="img-fluid w-100 rounded" alt="Image" width={400} height={200}/>
                                     
                                     <div className="international-content">
                                         <div className="international-info">
@@ -186,7 +186,7 @@ const Tour = () => {
                                     </div>
                                 </div>
                                 <div className="international-item">
-                                <Image src="/images/explore-tour-5.jpg" className="img-fluid w-100 rounded" alt="Image" width={100} height={50}/>
+                                <Image src="/images/explore-tour-5.jpg" className="img-fluid w-100 rounded" alt="Image" width={400} height={200}/>
                                     
                                     <div className="international-content">
                                         <div className="tour-offer bg-info">70% Off</div>

@@ -26,7 +26,7 @@ const Hero = () => {
                 width={400}
                 height={400}
                 alt="Image"
-                sizes='10vw'
+                sizes='100vw'
               />
               <div className="carousel-caption">
                 <div className="p-3" style={{ maxWidth: "900px" }}>
@@ -61,6 +61,7 @@ const Hero = () => {
                 width={400}
                 height={400}
                 alt="Image"
+                sizes="100vw"
               />
               <div className="carousel-caption">
                 <div className="p-3" style={{ maxWidth: "900px" }}>
@@ -95,6 +96,7 @@ const Hero = () => {
                 width={400}
                 height={400}
                 alt="Image"
+                sizes="100vw"
               />
               <div className="carousel-caption">
                 <div className="p-3" style={{ maxWidth: "900px" }}>
@@ -129,6 +131,7 @@ const Hero = () => {
                 width={400}
                 height={400}
                 alt="Image"
+                sizes="100vw"
               />
               <div className="carousel-caption">
                 <div className="p-3" style={{ maxWidth: "900px" }}>

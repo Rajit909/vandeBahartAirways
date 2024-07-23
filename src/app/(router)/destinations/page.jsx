@@ -86,7 +86,7 @@ const Destinations = () => {
               </li>
             </ul>
             <div className="tab-content">
-              <div id="tab-1" className="tab-pane fade show p-0 active">
+              <div id="tab-1" className="tab-pane fade show p-0 active" data-aos="fade-right">
                 <div className="row g-4">
                   <DestinationList/>
                 </div>

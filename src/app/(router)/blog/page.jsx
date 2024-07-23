@@ -6,7 +6,7 @@ import React from 'react'
 const Blog = () => {
   return (
     <>
-         <div className="container-fluid blog py-5">
+         <div className="container-fluid blog py-5" data-aos="fade-left">
             <div className="container py-5">
                 <div className="mx-auto text-center mb-5" style={{maxWidth: "900px"}}>
                     <h5 className="section-title px-3">Our Blog</h5>

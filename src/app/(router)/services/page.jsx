@@ -5,10 +5,10 @@ const Services = () => {
   return (
     <>
       <div className="container-fluid bg-light service py-5">
-        <div className="container py-5" data-aos="slide-left" 
+        <div className="container py-5" data-aos="fade-left" 
         // data-aos-offset="200"
         // data-aos-delay="10"
-        data-aos-duration="800"
+        // data-aos-duration="800"
         data-aos-easing="ease-in"
         // data-aos-mirror="true"
         // data-aos-once="true"
