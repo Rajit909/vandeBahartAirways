@@ -10,8 +10,8 @@ const TourItem = ({tour}) => {
             src={tour?.banner?.url}
             alt="banner"
             className="img-fluid w-100 rounded"
-            width={100}
-            height={50}
+            width={400}
+            height={100}
           />
           <div className="national-content">
             <div className="national-info">
