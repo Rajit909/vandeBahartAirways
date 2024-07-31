@@ -4,7 +4,7 @@ import React from "react";
 const DestinationItem = ({ url, photosCount, name }) => {
   return (
     <>
-      <div className="national-item">
+      <div className="national-item" data-aos="fade-up" data-aos-easing="ease-in">
         <Image
           src={url}
           className="img-fluid w-100 rounded"

@@ -27,10 +27,10 @@ const Destinations = () => {
                             </a>
                         </li>
                     </ul> */}
-                    <div className="tab-content" data-aos="fade-right">
+                    <div className="tab-content">
                         <div id="NationalTab-1" className="tab-pane fade show p-0 active">
                             <div className="row g-4">
-                              <DestinationList/>
+                              <DestinationList />
                             </div>
                         </div>
                     </div>

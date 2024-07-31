@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
 import React from 'react'
-
+import GalleryList from './_components/GalleryList'
 const Gallery = () => {
   return (
     <>
@@ -14,7 +14,7 @@ const Gallery = () => {
                 </p>
             </div>
             <div className="tab-className text-center">
-                <ul className="nav nav-pills d-inline-flex justify-content-center mb-5">
+                {/* <ul className="nav nav-pills d-inline-flex justify-content-center mb-5">
                     <li className="nav-item">
                         <a className="d-flex mx-3 py-2 border border-primary bg-light rounded-pill active" data-bs-toggle="pill" href="#GalleryTab-1">
                             <span className="text-dark" style={{width: "150px"}}>All</span>
@@ -40,280 +40,15 @@ const Gallery = () => {
                             <span className="text-dark" style={{width: "150px"}}>Sport Tour</span>
                         </a>
                     </li>
-                </ul>
+                </ul> */}
                 <div className="tab-content">
-                    <div id="GalleryTab-1" className="tab-pane fade show p-0 active" data-aos="fade-right">
-                        <div className="row g-2">
-                            <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
-                                <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-1.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
-                                    <div className="gallery-content">
-                                        <div className="gallery-info">
-                                            <h5 className="text-white text-uppercase mb-2">World Tour</h5>
-                                            <a href="#" className="btn-hover text-white">View All Place <i className="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="gallery-plus-icon">
-                                        <a href="img/gallery-1.jpg" data-lightbox="gallery-1" className="my-auto"><i className="fas fa-plus fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-2.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50}/>
-                                    <div className="gallery-content">
-                                        <div className="gallery-info">
-                                            <h5 className="text-white text-uppercase mb-2">World Tour</h5>
-                                            <a href="#" className="btn-hover text-white">View All Place <i className="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="gallery-plus-icon">
-                                        <a href="img/gallery-2.jpg" data-lightbox="gallery-2" className="my-auto"><i className="fas fa-plus fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
-                                <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-3.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
-                                    <div className="gallery-content">
-                                        <div className="gallery-info">
-                                            <h5 className="text-white text-uppercase mb-2">World Tour</h5>
-                                            <a href="#" className="btn-hover text-white">View All Place <i className="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="gallery-plus-icon">
-                                        <a href="img/gallery-3.jpg" data-lightbox="gallery-3" className="my-auto"><i className="fas fa-plus fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-4.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
-                                    <div className="gallery-content">
-                                        <div className="gallery-info">
-                                            <h5 className="text-white text-uppercase mb-2">World Tour</h5>
-                                            <a href="#" className="btn-hover text-white">View All Place <i className="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="gallery-plus-icon">
-                                        <a href="img/gallery-4.jpg" data-lightbox="gallery-4" className="my-auto"><i className="fas fa-plus fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
-                                <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-5.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
-                                    <div className="gallery-content">
-                                        <div className="gallery-info">
-                                            <h5 className="text-white text-uppercase mb-2">World Tour</h5>
-                                            <a href="#" className="btn-hover text-white">View All Place <i className="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="gallery-plus-icon">
-                                        <a href="img/gallery-5.jpg" data-lightbox="gallery-5" className="my-auto"><i className="fas fa-plus fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
-                                <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-6.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
-                                    <div className="gallery-content">
-                                        <div className="gallery-info">
-                                            <h5 className="text-white text-uppercase mb-2">World Tour</h5>
-                                            <a href="#" className="btn-hover text-white">View All Place <i className="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="gallery-plus-icon">
-                                        <a href="img/gallery-6.jpg" data-lightbox="gallery-6" className="my-auto"><i className="fas fa-plus fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                                <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-7.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
-                                    <div className="gallery-content">
-                                        <div className="gallery-info">
-                                            <h5 className="text-white text-uppercase mb-2">World Tour</h5>
-                                            <a href="#" className="btn-hover text-white">View All Place <i className="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="gallery-plus-icon">
-                                        <a href="img/gallery-7.jpg" data-lightbox="gallery-7" className="my-auto"><i className="fas fa-plus fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-sm-6 col-md-6 col-lg-3 col-xl-2">
-                                <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-8.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
-                                    <div className="gallery-content">
-                                        <div className="gallery-info">
-                                            <h5 className="text-white text-uppercase mb-2">World Tour</h5>
-                                            <a href="#" className="btn-hover text-white">View All Place <i className="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="gallery-plus-icon">
-                                        <a href="img/gallery-8.jpg" data-lightbox="gallery-8" className="my-auto"><i className="fas fa-plus fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                                <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-9.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
-                                    <div className="gallery-content">
-                                        <div className="gallery-info">
-                                            <h5 className="text-white text-uppercase mb-2">World Tour</h5>
-                                            <a href="#" className="btn-hover text-white">View All Place <i className="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="gallery-plus-icon">
-                                        <a href="img/gallery-9.jpg" data-lightbox="gallery-9" className="my-auto"><i className="fas fa-plus fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-sm-6 col-md-6 col-lg-3 col-xl-2">
-                                <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-10.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
-                                    <div className="gallery-content">
-                                        <div className="gallery-info">
-                                            <h5 className="text-white text-uppercase mb-2">World Tour</h5>
-                                            <a href="#" className="btn-hover text-white">View All Place <i className="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="gallery-plus-icon">
-                                        <a href="img/gallery-10.jpg" data-lightbox="gallery-10" className="my-auto"><i className="fas fa-plus fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div id="GalleryTab-1" className="tab-pane fade show p-0 active" >
+                        {/* <div className="row g-2">
+                            
+                        </div> */}
+                        <GalleryList/>
                     </div>
-                    <div id="GalleryTab-2" className="tab-pane fade show p-0">
-                        <div className="row g-2">
-                            <div className="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-2.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
-                                    <div className="gallery-content">
-                                        <div className="gallery-info">
-                                            <h5 className="text-white text-uppercase mb-2">World Tour</h5>
-                                            <a href="#" className="btn-hover text-white">View All Place <i className="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="gallery-plus-icon">
-                                        <a href="img/gallery-2.jpg" data-lightbox="gallery-2" className="my-auto"><i className="fas fa-plus fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
-                                <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-3.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
-                                    <div className="gallery-content">
-                                        <div className="gallery-info">
-                                            <h5 className="text-white text-uppercase mb-2">World Tour</h5>
-                                            <a href="#" className="btn-hover text-white">View All Place <i className="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="gallery-plus-icon">
-                                        <a href="img/gallery-3.jpg" data-lightbox="gallery-3" className="my-auto"><i className="fas fa-plus fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="GalleryTab-3" className="tab-pane fade show p-0">
-                        <div className="row g-2">
-                            <div className="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-2.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
-                                    <div className="gallery-content">
-                                        <div className="gallery-info">
-                                            <h5 className="text-white text-uppercase mb-2">World Tour</h5>
-                                            <a href="#" className="btn-hover text-white">View All Place <i className="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="gallery-plus-icon">
-                                        <a href="img/gallery-2.jpg" data-lightbox="gallery-2" className="my-auto"><i className="fas fa-plus fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
-                                <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-3.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
-                                    <div className="gallery-content">
-                                        <div className="gallery-info">
-                                            <h5 className="text-white text-uppercase mb-2">World Tour</h5>
-                                            <a href="#" className="btn-hover text-white">View All Place <i className="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="gallery-plus-icon">
-                                        <a href="img/gallery-3.jpg" data-lightbox="gallery-3" className="my-auto"><i className="fas fa-plus fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="GalleryTab-4" className="tab-pane fade show p-0">
-                        <div className="row g-2">
-                            <div className="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-2.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
-                                    <div className="gallery-content">
-                                        <div className="gallery-info">
-                                            <h5 className="text-white text-uppercase mb-2">World Tour</h5>
-                                            <a href="#" className="btn-hover text-white">View All Place <i className="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="gallery-plus-icon">
-                                        <a href="img/gallery-2.jpg" data-lightbox="gallery-2" className="my-auto"><i className="fas fa-plus fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
-                                <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-3.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
-                                    <div className="gallery-content">
-                                        <div className="gallery-info">
-                                            <h5 className="text-white text-uppercase mb-2">World Tour</h5>
-                                            <a href="#" className="btn-hover text-white">View All Place <i className="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="gallery-plus-icon">
-                                        <a href="img/gallery-3.jpg" data-lightbox="gallery-3" className="my-auto"><i className="fas fa-plus fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="GalleryTab-5" className="tab-pane fade show p-0">
-                        <div className="row g-2">
-                            <div className="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-2.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
-                                    <div className="gallery-content">
-                                        <div className="gallery-info">
-                                            <h5 className="text-white text-uppercase mb-2">World Tour</h5>
-                                            <a href="#" className="btn-hover text-white">View All Place <i className="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="gallery-plus-icon">
-                                        <a href="img/gallery-2.jpg" data-lightbox="gallery-2" className="my-auto"><i className="fas fa-plus fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-sm-6 col-md-6 col-lg-4 col-xl-2">
-                                <div className="gallery-item h-100">
-                                    <Image src="/images/gallery-3.jpg" className="img-fluid w-100 h-100 rounded" alt="Image" width={100} height={50} sizes='100vw'/>
-                                    <div className="gallery-content">
-                                        <div className="gallery-info">
-                                            <h5 className="text-white text-uppercase mb-2">World Tour</h5>
-                                            <a href="#" className="btn-hover text-white">View All Place <i className="fa fa-arrow-right ms-2"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="gallery-plus-icon">
-                                        <a href="img/gallery-3.jpg" data-lightbox="gallery-3" className="my-auto"><i className="fas fa-plus fa-2x text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  
                 </div>
             </div>
         </div>

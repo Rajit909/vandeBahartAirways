@@ -5,19 +5,12 @@ const Services = () => {
   return (
     <>
       <div className="container-fluid bg-light service py-5">
-        <div className="container py-5" data-aos="fade-left" 
-        // data-aos-offset="200"
-        // data-aos-delay="10"
-        // data-aos-duration="800"
-        data-aos-easing="ease-in"
-        // data-aos-mirror="true"
-        // data-aos-once="true"
-        // data-aos-anchor-placement="top-center"
+        <div className="container py-5"
         >
           <div
             className="mx-auto text-center mb-5"
             style={{ maxWidth: "900px" }}
-            
+            data-aos="fade-up" data-aos-easing="ease-in-sine"
           >
             <h5 className="section-title px-3">Searvices</h5>
             <h1 className="mb-0">Our Services</h1>
@@ -25,7 +18,7 @@ const Services = () => {
           <div className="row g-4">
             <div className="col-lg-12">
               <div className="row g-4">
-                <div className="col-12 col-lg-6">
+                <div className="col-12 col-lg-6" data-aos="fade-up" data-aos-easing="ease-in-sine">
                   <div className="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
                     <div className="service-icon p-4">
                       <i className="fa fa-globe fa-4x text-primary"></i>
@@ -49,7 +42,7 @@ const Services = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-12 col-lg-6">
+                <div className="col-12 col-lg-6" data-aos="fade-up" data-aos-easing="ease-in-sine">
                   <div className="service-content-inner d-flex align-items-center  bg-white border border-primary rounded p-4 pe-0">
                     <div className="service-icon p-4">
                       <i className="fa fa-hotel fa-4x text-primary"></i>
@@ -71,7 +64,7 @@ const Services = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-12 col-lg-6">
+                <div className="col-12 col-lg-6" data-aos="fade-up" data-aos-easing="ease-in-sine">
                   <div className="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
                     <div className="service-icon p-4">
                       <i className="fa fa-user fa-4x text-primary"></i>
@@ -122,7 +115,7 @@ const Services = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-12 col-lg-6">
+                <div className="col-12 col-lg-6" data-aos="fade-up" data-aos-easing="ease-in-sine">
                   <div className="service-content-inner d-flex align-items-center bg-white border border-primary rounded p-4 pe-0">
                     <div className="service-icon p-4">
                       <i className="fa fa-cog fa-4x text-primary"></i>
@@ -157,7 +150,7 @@ const Services = () => {
               </div>
             </div>
             <div className="col-12">
-              <div className="text-center">
+              <div className="text-center" data-aos="fade-up" data-aos-easing="ease-in-sine">
                 <a
                   className="btn btn-primary rounded-pill py-3 px-5 mt-2"
                   href=""
