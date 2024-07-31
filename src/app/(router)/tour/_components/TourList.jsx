@@ -3,6 +3,7 @@ import GlobalApi from "../../../_utils/GlobalApi";
 import React, { useEffect, useState } from "react";
 import TourItem from "./TourItem";
 import "./style.css"
+import Script from "next/script";
 
 const TourList = () => {
     const [tourList, setTourList] = useState([]);
@@ -35,7 +36,7 @@ const TourList = () => {
             key={index}
             className="w-full h-[280px] rounded-xl bg-slate-400 animate-pulse"
             >
-            <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+            <Script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"/>
                 <div className="relative top-48 left-32">
                   <div className=" rounded-xl relative left-14 bg-slate-300 h-6 mb-2 w-20"></div>
                   <div className=" ml-5 w-36 bg-slate-300 h-6 rounded-xl"></div>
