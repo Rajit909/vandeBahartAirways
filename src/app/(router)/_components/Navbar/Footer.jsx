@@ -131,7 +131,7 @@ const Footer = () => {
                         <i className="fas fa-copyright me-2"></i><a className="text-white" href="#">Vande Bharat Airways</a>, All right reserved.
                     </div>
                     <div className="col-md-6 text-center text-md-start">
-                        Designed By <a className="text-white" href="https://htmlcodex.com">HTML Codex | Managed by (BTS)</a>
+                        Since from 2017
                     </div>
                 </div>
             </div>

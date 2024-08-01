@@ -7,11 +7,11 @@ const Bookings = () => {
   return (
    <>        
    
-        <div className="container-fluid booking py-5">
+        <div className="container-fluid booking py-5" data-aos="fade-up">
             <div className="container py-5">
                 <div className="row g-5 align-items-center">
-                    <div className="col-lg-6">
-                        <h5 className="section-booking-title pe-3">Booking</h5>
+                    <div className="col-lg-6" data-aos="fade-up">
+                        <h5 className="section-booking-title pe-3" >Booking</h5>
                         <h1 className="text-white mb-4">Online Booking</h1>
                         <div>
 

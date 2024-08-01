@@ -12,9 +12,12 @@ const Packages = () => {
                     <h5 className="section-title px-3">Packages</h5>
                     <h1 className="mb-0">Awesome Packages</h1>
                 </div>
+                {/* show skeleton when pakadges are loading */}
+                
                 <div className="packages-carousel owl-carousel">
                     <PackagesList/>
                 </div>
+                
             </div>
         </div>
    </>

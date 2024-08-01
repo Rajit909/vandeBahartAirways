@@ -10,7 +10,7 @@ const Aboutus = () => {
       <div className="container-fluid about py-5">
         <div className="container py-5">
           <div className="row g-5 align-items-center">
-            <div className="col-lg-5">
+            <div className="col-lg-5" data-aos="fade-right">
               <div
                 className="h-100"
                 style={{
@@ -24,7 +24,7 @@ const Aboutus = () => {
                   alt=""
                   width={400}
                   height={100}
-                  sizes="10vw"
+                  sizes="100vw"
                 />
               </div>
             </div>
@@ -34,6 +34,7 @@ const Aboutus = () => {
                 background:
                   "linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(images/about-img-1.png)",
               }}
+              data-aos="fade-left"
             >
               <h5 className="section-about-title pe-3">About Us</h5>
               <h1 className="mb-4">

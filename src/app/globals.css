@@ -19,3 +19,75 @@ body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+/* Add this to your global CSS or Tailwind CSS setup */
+.fixed {
+  position: fixed;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.bg-opacity-50 {
+  opacity: 0.9;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.max-w-sm {
+  max-width: 24rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.top-2 {
+  top: 0.5rem;
+}
+
+.right-2 {
+  right: 0.5rem;
+}
