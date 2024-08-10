@@ -245,6 +245,7 @@ const Career = () => {
                         value={userData.appliedFor}
                         onChange={handleChange}
                       >
+                        <option  hidden>Select Job Opening</option>
                         <option value="Travel Agent">Travel Agent</option>
                         <option value="Tourism Executive">
                           Tourism Executive

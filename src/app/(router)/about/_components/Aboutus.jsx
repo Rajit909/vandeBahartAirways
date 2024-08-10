@@ -19,7 +19,7 @@ const Aboutus = () => {
                 }}
               >
                 <Image
-                  src="/images/about.jpg"
+                  src="/images/about.gif"
                   className="img-fluid"
                   alt=""
                   width={400}
@@ -115,7 +115,7 @@ const Aboutus = () => {
           </div>
         </div>
       </div>
-      <Subscribe/>
+      {/* <Subscribe/> */}
     </div>
   );
 };

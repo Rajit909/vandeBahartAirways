@@ -1,6 +1,6 @@
-'use client'
+"use client";
 
-// import About from "./(router)/about/page";
+import About from "./(router)/about/page";
 import Destinations from "./(router)/destinations/page";
 import Hero from "./(router)/_components/Hero";
 import Services from "./(router)/services/page";
@@ -13,10 +13,8 @@ import Bookings from "./(router)/bookings/page";
 import Subscribe from "./(router)/_components/Subscribe";
 import { useEffect, useState } from "react";
 import Loading from "./(router)/loading";
+import Image from "next/image";
 // import Blog from "./(router)/blog/page";
-
-
-
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -24,60 +22,58 @@ export default function Home() {
   useEffect(() => {
     // Simulate data fetching (replace with your actual data fetching logic)
     setTimeout(() => {
-        // Assume data is fetched after 2 seconds
-        setData(/* your fetched data */);
-        setLoading(false); // Set loading to false when data fetching is complete
+      // Assume data is fetched after 2 seconds
+      setData(/* your fetched data */);
+      setLoading(false); // Set loading to false when data fetching is complete
     }, 500);
-}, []);
+  }, []);
 
   return (
-    <>    
-
-    {
-      loading ? (
-        <Loading/>
+    <>
+      {loading ? (
+        <Loading />
       ) : (
-    <div>
-      <main> 
-        {/* hero */}
-        <Hero/>
+        <div>
+          <main>
+            {/* hero */}
+            <Hero />
+            
 
-        {/* About */}
-        {/* <About/> */}
+            {/* About */}
+            <About/>
 
-        {/* Services */}
-        <Services/>
+            {/* Services */}
+            <Services />
 
-        {/* destinations */}
-        <Destinations/>
+            {/* destinations */}
+            <Destinations />
 
-        {/* packages */}
-        <Packages/>
+            {/* packages */}
+            <Packages />
 
-         {/* Tour */}
-         <Tour/>
+            {/* Tour */}
+            <Tour />
 
-        {/* Gallery */}
-        <Gallery/>
+            {/* Gallery */}
+            <Gallery />
 
-        {/* BOkkings */}
-        <Bookings/>
+            {/* BOkkings */}
+            <Bookings />
 
-        {/* Guides */}
-        {/* <Guides/> */}
+            {/* Guides */}
+            {/* <Guides/> */}
 
-        {/* blogs */}
-        {/* <Blog/> */}
+            {/* blogs */}
+            {/* <Blog/> */}
 
-        {/* testimonials */}
-        {/* <Testimonials/> */}
+            {/* testimonials */}
+            {/* <Testimonials/> */}
 
-        {/* Subscribe form */}
-        <Subscribe/>
-
-      </main>
-    </div>
-     )}
+            {/* Subscribe form */}
+            <Subscribe />
+          </main>
+        </div>
+      )}
     </>
   );
-  }
+}

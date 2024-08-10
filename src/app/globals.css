@@ -91,3 +91,26 @@ body{
 .right-2 {
   right: 0.5rem;
 }
+
+
+/* chat-support */
+.chat-support{
+  position: fixed;
+  bottom: 25px;
+  left: 5px;
+  padding: 12px;  
+  padding-left: 25px;
+  background-color: rgb(85, 85, 191);
+  border-radius: 20px 15px 15px 0px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 80%;
+
+}
+.chat-support:hover{
+  transition:all 0.3s ease-in;
+  transform: scale(1.1);
+  left: 10px;
+}
+
+

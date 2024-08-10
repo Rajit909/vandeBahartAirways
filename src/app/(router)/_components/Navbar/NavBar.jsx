@@ -20,16 +20,16 @@ const NavBar = () => {
                 </div>
                 <div className="col-lg-4 text-center text-lg-end">
                     <div className="d-inline-flex align-items-center">
-                        <a href="#"><small className="me-3 text-light"><i className="fa fa-user me-2"></i>Register</small></a>
-                        <a href="#"><small className="me-3 text-light"><i className="fa fa-sign-in-alt me-2"></i>Login</small></a>
+                        {/* <a href="#"><small className="me-3 text-light"><i className="fa fa-user me-2"></i>Register</small></a> */}
+                        {/* <a href="#"><small className="me-3 text-light"><i className="fa fa-sign-in-alt me-2"></i>Login</small></a> */}
                         <div className="dropdown">
-                            <a href="#" className="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i className="fa fa-home me-2"></i> My Dashboard</small></a>
+                            {/* <a href="#" className="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i className="fa fa-home me-2"></i> My Dashboard</small></a> */}
                             <div className="dropdown-menu rounded">
-                                <a href="#" className="dropdown-item"><i className="fas fa-user-alt me-2"></i> My Profile</a>
-                                <a href="#" className="dropdown-item"><i className="fas fa-comment-alt me-2"></i> Inbox</a>
-                                <a href="#" className="dropdown-item"><i className="fas fa-bell me-2"></i> Notifications</a>
-                                <a href="#" className="dropdown-item"><i className="fas fa-cog me-2"></i> Account Settings</a>
-                                <a href="#" className="dropdown-item"><i className="fas fa-power-off me-2"></i> Log Out</a>
+                                {/* <a href="#" className="dropdown-item"><i className="fas fa-user-alt me-2"></i> My Profile</a> */}
+                                {/* <a href="#" className="dropdown-item"><i className="fas fa-comment-alt me-2"></i> Inbox</a> */}
+                                {/* <a href="#" className="dropdown-item"><i className="fas fa-bell me-2"></i> Notifications</a> */}
+                                {/* <a href="#" className="dropdown-item"><i className="fas fa-cog me-2"></i> Account Settings</a> */}
+                                {/* <a href="#" className="dropdown-item"><i className="fas fa-power-off me-2"></i> Log Out</a> */}
                             </div>
                         </div>
                     </div>
@@ -51,7 +51,7 @@ const NavBar = () => {
                 <div className="collapse navbar-collapse" id="navbarCollapse">
                     <div className="navbar-nav ms-auto py-0">
                         <Link href={"/"} className="nav-item nav-link ">Home</Link>
-                        <Link href={"/about"} className="nav-item nav-link">About</Link>
+                        {/* <Link href={"/about"} className="nav-item nav-link">About</Link> */}
                         <Link href={"/services"} className="nav-item nav-link">Services</Link>
                         <Link href={"/packages"} className="nav-item nav-link">Packages</Link>
                         <Link href={"/blog"} className="nav-item nav-link">Blog</Link>

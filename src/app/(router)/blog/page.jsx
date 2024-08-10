@@ -12,7 +12,7 @@ const Blog = () => {
                 <div className="mx-auto text-center mb-5" style={{maxWidth: "900px"}}>
                     <h5 className="section-title px-3">Our Blog</h5>
                     <h1 className="mb-4">Popular Travel Blogs</h1>
-                    <p className="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti deserunt tenetur sapiente atque. Magni non explicabo beatae sit, vel reiciendis consectetur numquam id similique sunt error obcaecati ducimus officia maiores.
+                    <p className="mb-0">
                     </p>
                 </div>
                 <div className="row g-4 justify-content-center">

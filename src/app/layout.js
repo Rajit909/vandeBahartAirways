@@ -7,6 +7,8 @@ import "/public/lib/lightbox/css/lightbox.min.css";
 import "/public/css/bootstrap.min.css";
 import "/public/css/style.css";
 import NextTopLoader from 'nextjs-toploader';
+import ChatSupport from './(router)/_components/ChatSupport/ChatSupport'
+
 
 import Script from "next/script";
 import Head from "next/head";
@@ -165,8 +167,13 @@ export default function RootLayout({ children }) {
           href="#"
           className="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"
         >
-          <i className="fa fa-arrow-up"></i>
+          <i className="fa fa-arrow-up btn-md-square"></i>
         </a>
+        <div
+          className="chat-support"
+        >
+          <ChatSupport/>
+        </div>
         
         {/* JavaScript Libraries and Scripts */}
         <Script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" />
