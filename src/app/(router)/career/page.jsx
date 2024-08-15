@@ -22,9 +22,9 @@ const Career = () => {
     fname: "",
     aadhar: "",
     education: "",
-    appliedFor: "",
-    jobDate: "",
-    house: "",
+    // appliedFor: "",
+    // jobDate: "",
+    // house: "",
     city: "",
     post: "",
     pincode: "",
@@ -92,13 +92,13 @@ const Career = () => {
     <div className="container-fluid contact bg-light py-5">
       <div className="container py-5">
         <div className="mx-auto text-center mb-5" style={{ maxWidth: "900px" }}>
-          <h5 className="section-title px-3 my-4">Apply for Jobs</h5>
-          <h1 className="mb-0">Explore Job Opportunities, For Better Career</h1>
+          {/* <h5 className="section-title px-3 my-4">Apply for Jobs</h5> */}
+          <h1 className="mb-0"></h1>
         </div>
         <div className="row g-5">
           <div className="card g-5 align-items-center shadow-lg bg-light">
             <div className="card-header bg-primary text-center w-100">
-              <h4 className="text-white">JOB APPLICATION FORM</h4>
+              <h4 className="text-white"> APPLICATION FORM </h4>
             </div>
             <div className="col-lg-12">
               <form
@@ -235,7 +235,7 @@ const Career = () => {
                     </div>
                   </div>
 
-                  <div className="col-md-4 mb-4">
+                  {/* <div className="col-md-4 mb-4">
                     <div className="form-floating">
                       <select
                         className="form-select"
@@ -292,8 +292,8 @@ const Career = () => {
                       />
                       <label htmlFor="jobDate">Job Date</label>
                     </div>
-                  </div>
-                  <div className="col-md-4 mb-4">
+                  </div> */}
+                  {/* <div className="col-md-4 mb-4">
                     <div className="form-floating">
                       <input
                         type="text"
@@ -307,7 +307,7 @@ const Career = () => {
                       />
                       <label htmlFor="house">House No.</label>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="col-md-4 mb-4">
                     <div className="form-floating">
                       <input
@@ -427,17 +427,6 @@ const Career = () => {
                       </select>
                     </div>
                   </div>
-                  {/* {imageUrl && (
-                    <div className="border w-50">
-                      <p>Uploaded Image Preview</p>
-                      <Image
-                        src={imageUrl}
-                        alt="Uploaded Image"
-                        width={180}
-                        height={150}
-                      />
-                    </div>
-                  )} */}
 
                   <div className="col-md-4 mb-4">
                     <div className="form-floating">
@@ -484,7 +473,7 @@ const Career = () => {
                                  Please wait...
                                    </div>
                                    : 
-                                   'Register now'}
+                                   'Submit now'}
                   </button>
                 </div>
               </form>

@@ -86,7 +86,7 @@ const Footer = () => {
                   {" "}
                   <i className="fas fa-angle-right me-2"></i>Contact
                 </Link>
-                <a href="">
+                {/* <a href="">
                   <i className="fas fa-angle-right me-2"></i> Legal Notice
                 </a>
                 <a href="">
@@ -95,7 +95,7 @@ const Footer = () => {
                 <a href="">
                   <i className="fas fa-angle-right me-2"></i> Terms and
                   Conditions
-                </a>
+                </a> */}
               </div>
             </div>
             <div className="col-md-6 col-lg-6 col-xl-3">

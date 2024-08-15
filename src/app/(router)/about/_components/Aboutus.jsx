@@ -68,7 +68,7 @@ const Aboutus = () => {
                 </p>
               </p>
               <div className="row gy-2 gx-4 mb-4">
-                <div className="col-sm-6">
+                {/* <div className="col-sm-6">
                   <p className="mb-0">
                     <i className="fa fa-arrow-right text-primary me-2"></i>First
                     Class Flights
@@ -97,7 +97,7 @@ const Aboutus = () => {
                     <i className="fa fa-arrow-right text-primary me-2"></i>150
                     Premium City Tours
                   </p>
-                </div>
+                </div> */}
                 <div className="col-sm-6">
                   <p className="mb-0">
                     <i className="fa fa-arrow-right text-primary me-2"></i>24/7

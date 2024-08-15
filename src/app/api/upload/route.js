@@ -44,8 +44,7 @@ export async function POST(request) {
     const resumePath = await saveFile(files['resume']);
 
     const {
-      name, email, mobile, dob, gender, fname, aadhar, education, appliedFor,
-      jobDate, house, city, post, pincode, district, state
+      name, email, mobile, dob, gender, fname, aadhar, education, city, post, pincode, district, state
     } = fields;
 
     // Configure Nodemailer transporter with Hostinger SMTP settings
@@ -73,10 +72,7 @@ export async function POST(request) {
         Father's Name: ${fname}
         Aadhar: ${aadhar}
         Education: ${education}
-        Applied For: ${appliedFor}
-        Job Date: ${jobDate}
-        Address:-
-          House No: ${house}
+          Address:-
           City: ${city}
           Post Office: ${post}
           Pincode: ${pincode}
