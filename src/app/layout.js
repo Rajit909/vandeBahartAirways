@@ -169,11 +169,11 @@ export default function RootLayout({ children }) {
         >
           <i className="fa fa-arrow-up btn-md-square"></i>
         </a>
-        <div
+        {/* <div
           className="chat-support"
         >
           <ChatSupport/>
-        </div>
+        </div> */}
         
         {/* JavaScript Libraries and Scripts */}
         <Script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" />
