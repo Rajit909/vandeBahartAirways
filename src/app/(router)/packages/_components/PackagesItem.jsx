@@ -60,14 +60,14 @@ const PackagesItem = ({ url, location, title, dur, person, price, desc }) => {
                 Read More
               </a>
             </div>
-            <div className="col-6 text-end px-0">
+            {/* <div className="col-6 text-end px-0">
               <button
                 className="btn-hover btn text-white py-2 px-4"
             
               >
                 Book Now
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
         {/* <ComingSoonModal show={showModal} onClose={handleCloseModal}>
