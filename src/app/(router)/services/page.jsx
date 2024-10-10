@@ -12,7 +12,7 @@ const Services = () => {
             style={{ maxWidth: "900px" }}
             data-aos="fade-up" data-aos-easing="ease-in-sine"
           >
-            <h5 className="section-title px-3">Searvices</h5>
+            <h5 className="section-title px-3">Services</h5>
             <h1 className="mb-0">Our Services</h1>
           </div>
           <div className="row g-4">
