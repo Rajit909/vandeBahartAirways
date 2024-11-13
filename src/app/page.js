@@ -1,6 +1,6 @@
 "use client";
 
-import About from "./(router)/about/page";
+import About from "./(router)/_components/About";
 import Destinations from "./(router)/destinations/page";
 import Hero from "./(router)/_components/Hero";
 import Services from "./(router)/services/page";

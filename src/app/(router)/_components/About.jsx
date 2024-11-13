@@ -1,8 +1,10 @@
 import React from "react";
 import Image from "next/image";
-// import Subscribe from "../../_components/Subscribe";
+import Link from "next/link";
 
-const Aboutus = () => {
+
+const About = () => {
+  
   return (
     <div>
       <div className="container-fluid about py-5">
@@ -39,7 +41,7 @@ const Aboutus = () => {
                 Welcome to{" "}
                 <span className="text-primary">VandeBharat Airways</span>
               </h1>
-              <p className="mb-4 " style={{textAlign: "justify"}}>
+              <p className="mb-4" style={{textAlign: "justify"}}>
                 Welcome to Vande Bharat Airways continues to be better place for
                 tour and travels across the world from 2021 onwards. We have
                 come up with a better platform for family vacation, or a weekend
@@ -47,7 +49,7 @@ const Aboutus = () => {
                 seamless, convenient, and enjoyable. we are here to help you
                 find the best deals on airlines tickets, train reservations, and
                 hotel accommodations.
-                <p>
+                <p style={{textAlign: "justify"}}>
                   <br />
                   <h4>Wide Selection:</h4> We partner with leading airlines,
                   train operators, and hotels worldwide to offer you a diverse
@@ -66,7 +68,7 @@ const Aboutus = () => {
                 </p>
               </p>
               <div className="row gy-2 gx-4 mb-4">
-                <div className="col-sm-6">
+                {/* <div className="col-sm-6">
                   <p className="mb-0">
                     <i className="fa fa-arrow-right text-primary me-2"></i>First
                     Class Flights
@@ -95,7 +97,7 @@ const Aboutus = () => {
                     <i className="fa fa-arrow-right text-primary me-2"></i>150
                     Premium City Tours
                   </p>
-                </div>
+                </div> */}
                 <div className="col-sm-6">
                   <p className="mb-0">
                     <i className="fa fa-arrow-right text-primary me-2"></i>24/7
@@ -103,101 +105,11 @@ const Aboutus = () => {
                   </p>
                 </div>
               </div>
-
-             
-            </div>
-            <div>
-            <div>
-                <p  style={{textAlign: "justify"}}>
-                  <br />
-                  <h4>MISSION::</h4> Our mission is to dedication to the highest
-                  quality of Customer Service delivered with a sense of warmth,
-                  friendliness, individual pride, and Company Spirit. To help
-                  people around the world plan and have the perfect trip..
-                  <br />
-                  &nbsp; &nbsp;- Vande Bharat Airways is committed to provide
-                  affordable, reliable, and exceptional air travel with
-                  prioritizing passenger comfort, And fostering culture of
-                  safety.
-                </p>
-              </div>
-
-              <div>
-                <p className=" justify-text" style={{textAlign: "justify"}}>
-                  <br />
-                  <h4>VISION:</h4> At Vande Bharat Airways, our vision is to
-                  transform the flying experience, making it effortless,
-                  enjoyable, and inclusive for all. We strive to:.
-                  <br />
-                  &nbsp; &nbsp; - Set new standards in customer service,
-                  exceeding expectations at every touchpoint. <br />
-                  &nbsp; &nbsp; - Pioneer innovative solutions, harnessing
-                  technology to enhance safety, efficiency, and sustainability.
-                  <br />
-                  &nbsp; &nbsp;- Foster a culture of collaboration, empowering
-                  our diverse team to grow and thrive.
-                  <br />
-                  &nbsp; &nbsp;- Expand our global network, connecting
-                  communities and cultures with reliability and comfort.
-                  <br />
-                  &nbsp; &nbsp; - Lead the industry in environmental
-                  stewardship, minimizing our ecological footprint.
-                  <br />
-                  By living these values, we aim to earn the loyalty of our
-                  customers, the respect of our peers, and the pride of our
-                  employees
-                </p>
-
-                <p>
-                  <h1>VALUES:</h1>
-                  <ol style={{textAlign: "justify"}}>
-                    <li>
-                      Safety: Prioritize the well-being of passengers,
-                      employees, and communities.
-                    </li>
-                    <li>
-                      Customer Focus: Deliver exceptional experiences through
-                      empathy, respect, and responsiveness.
-                    </li>
-
-                    <li>
-                      Integrity: Operate with transparency, ethics, and
-                      accountability.
-                    </li>
-
-                    <li>
-                      Teamwork: Foster collaboration, inclusivity, and open
-                      communication.
-                    </li>
-
-                    <li>
-                      Innovation: Encourage creativity, experimentation, and
-                      continuous improvement.
-                    </li>
-                    <li>
-                      Sustainability: Minimize environmental impact through
-                      responsible practices.
-                    </li>
-                    <li>Reliability: Ensure consistent, dependable service.</li>
-
-                    <li>
-                      Empathy: Show understanding and compassion for diverse
-                      passenger needs.
-                    </li>
-                  </ol>
-                </p>
-              </div>
-
-              <div>
-                <h3 className=" foot-semibold">UPCOMIMG SERVICES:</h3>
-                <ul style={{textAlign: "justify"}}>
-                  <li>TICKETS BOOKING</li>
-                  <li>Flight Booking</li>
-                  <li>Hotel Booking Cab</li>
-                  <li>Hotel Booking Cab</li>
-                  <li> Bus, and Train Booking</li>
-                </ul>
-              </div>
+              <Link href="/about"
+                className="btn btn-primary rounded-pill py-3 px-5 mt-2"
+              >
+                Read More
+              </Link>
             </div>
           </div>
         </div>
@@ -207,4 +119,4 @@ const Aboutus = () => {
   );
 };
 
-export default Aboutus;
+export default About;
