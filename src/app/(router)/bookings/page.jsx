@@ -16,7 +16,7 @@ const Bookings = () => {
                         <div>
 
                        
-                    <h1 className='text-warning text-center'>Comming Soon</h1>
+                    <h1 className='text-warning text-center'>Coming Soon</h1>
                         </div>
                         {/* <a href="#" className="btn btn-light text-primary rounded-pill py-3 px-5 mt-2">Read More</a> */}
                     </div>
