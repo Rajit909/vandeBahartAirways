@@ -38,7 +38,6 @@ export default function Home() {
             {/* hero */}
             <Hero />
             
-
             {/* About */}
             <About/>
 
